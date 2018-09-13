@@ -1,10 +1,11 @@
 import React from 'react';
 import Typography from '@material-ui/core/Typography';
 import {withStyles} from '@material-ui/core/styles';
+import PropTypes from 'prop-types';
 
-const styles  = theme => {
+const styles  = theme => ({
 
-};
+});
 
 class Footer extends React.Component{
 
@@ -14,5 +15,9 @@ class Footer extends React.Component{
     }
 }
 
+Footer.propTypes = {
+  classes: PropTypes.object.isRequired
+};
 
-export default Footer;
+
+export default withStyles(styles)(Footer);

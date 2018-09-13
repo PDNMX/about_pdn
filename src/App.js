@@ -2,16 +2,50 @@ import React, { Component } from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Typography from "@material-ui/core/Typography";
+import {withStyles} from '@material-ui/core/styles';
+import PropTypes from 'prop-types';
+
+const styles = theme => ({
+    root: {
+        flexGrow: 1,
+        display: 'flex',
+        flexDirection: 'column',
+        height: '100vh'
+    },
+    contents: {
+        flexGrow: 1,
+        paddingTop: theme.spacing.unit * 5,
+        paddingBottom: theme.spacing.unit * 5,
+        [theme.breakpoints.up('sm')]:{
+            marginLeft: '100px',
+            marginRight: '100px'
+        },
+        [theme.breakpoints.down('sm')]:{
+            marginLeft: theme.spacing.unit,
+            marginRight: theme.spacing.unit
+        }
+    },
+    paper: {
+        padding: theme.spacing.unit * 2,
+        //textAlign: 'center',
+        color: theme.palette.text.secondary,
+    },
+});
 
 class App extends Component {
     render() {
+
+        const {classes} = this.props;
+
         return (
-            <div>
+            <div className={classes.root}>
                 <Header/>
 
+                <div className={classes.contents}>
                 <Typography>
                     Landing body
                 </Typography>
+                </div>
 
                 <Footer/>
             </div>
@@ -19,4 +53,8 @@ class App extends Component {
   }
 }
 
-export default App;
+App.propTypes = {
+    classes: PropTypes.object.isRequired
+};
+
+export default withStyles(styles)(App);
