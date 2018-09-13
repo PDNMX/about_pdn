@@ -11,7 +11,9 @@ class Footer extends React.Component{
 
     render (){
         const { classes } = this.props;
-        return <Typography>Footer</Typography>
+        return (<Typography>
+            Conoce más en <b>gob.mx/sesna/pdn</b> o escribenos a: <b>contactosesna@sesna.gob.mx</b>
+        </Typography>)
     }
 }
 

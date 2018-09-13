@@ -1,9 +1,14 @@
 import React, { Component } from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Typography from "@material-ui/core/Typography";
+//import Typography from "@material-ui/core/Typography";
 import {withStyles} from '@material-ui/core/styles';
 import PropTypes from 'prop-types';
+
+import QueEs from './components/QueEs';
+import Sistemas from './components/Sistemas';
+import QueHacemos from './components/QueHacemos';
+import QueSigue from './components/QueSigue';
 
 const styles = theme => ({
     root: {
@@ -42,9 +47,11 @@ class App extends Component {
                 <Header/>
 
                 <div className={classes.contents}>
-                <Typography>
-                    Landing body
-                </Typography>
+                    <QueEs/>
+                    <Sistemas/>
+                    <QueHacemos/>
+                    <QueSigue/>
+
                 </div>
 
                 <Footer/>

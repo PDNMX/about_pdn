@@ -13,7 +13,16 @@ class Header extends React.Component{
 
     render (){
         const {classes} = this.props;
-        return <Typography>Header </Typography>
+        return (
+            <div>
+
+                <Typography>Plataforma Digital Nacional</Typography>
+                <Typography>Inteligencia de Datos Anticorrupcion</Typography>
+
+                <div>Beta</div>
+
+            </div>
+        );
     }
 }
 
