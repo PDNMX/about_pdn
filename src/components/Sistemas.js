@@ -11,9 +11,12 @@ class Sistemas extends React.Component {
     render () {
         return (
             <div>
-                <Typography>
-                    Sistemas prioritarios
+                <Typography variant={'title'}>
+                    Sistemas Prioritarios
                 </Typography>
+
+
+
             </div>
         )
     }

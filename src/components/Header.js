@@ -5,6 +5,9 @@ import PropTypes from 'prop-types';
 
 
 const styles = theme => ({
+    root: {
+        textAlign: 'center'
+    }
 
 });
 
@@ -14,7 +17,7 @@ class Header extends React.Component{
     render (){
         const {classes} = this.props;
         return (
-            <div>
+            <div className={classes.root}>
 
                 <Typography>Plataforma Digital Nacional</Typography>
                 <Typography>Inteligencia de Datos Anticorrupcion</Typography>
