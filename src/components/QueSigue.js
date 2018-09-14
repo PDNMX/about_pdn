@@ -5,8 +5,11 @@ import PropTypes from 'prop-types';
 import Chrono from '../assets/grafico-cronograma.svg';
 
 const styles = theme => ({
+    root: {
+    },
     chrono:{
-        width: '90%'
+        width: '90%',
+        fontFamily: 'Roboto'
     }
 });
 
@@ -15,7 +18,7 @@ class QueSigue extends React.Component{
         const {classes} = this.props;
 
         return (
-            <div>
+            <div className={classes.root}>
                 <Typography variant="title">
                 ¿Qué sigue?
                 </Typography>

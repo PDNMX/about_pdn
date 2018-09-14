@@ -6,8 +6,9 @@ import PropTypes from 'prop-types';
 const styles  = theme => ({
     root: {
         textAlign: 'center',
-        paddingTop: theme.spacing.unit * 10,
-        paddingBottom: theme.spacing.unit * 10,
+        paddingTop: theme.spacing.unit * 7,
+        paddingBottom: theme.spacing.unit * 7,
+        background: "#fff"
     }
 });
 
@@ -18,7 +19,7 @@ class Footer extends React.Component{
         return (
             <div className={classes.root}>
                 <Typography>
-                    Conoce más en <a href="https://www.gob.mx/sesna">www.gob.mx/sesna</a> o escribenos a: <b>contactosesna@sesna.gob.mx</b>
+                    Conoce más en <b><a href="https://www.gob.mx/sesna">www.gob.mx/sesna</a></b> o escribenos a <b>contactosesna@sesna.gob.mx</b>
                 </Typography>
             </div>
         )
