@@ -10,6 +10,43 @@ import Sistemas from './components/Sistemas';
 import QueHacemos from './components/QueHacemos';
 import QueSigue from './components/QueSigue';
 
+import {createMuiTheme, MuiThemeProvider } from '@material-ui/core/styles';
+
+const theme = createMuiTheme({
+    palette: {
+        primary: {
+            main:'#295c53',
+            light:'#56897f',
+            dark:'#00322b'
+        },
+        secondary: {
+            main: '#8fe19f',
+            light: "#c1ffd0",
+            dark:'#5eaf70'
+        },
+        fontLight:{
+            color: "#f5f5f5"//"#e0e0e0"
+        },
+        grey:{
+            color:"#707070"
+        },
+        greyTitle:{
+            color:"#333333"
+        },
+        graphGreen:{
+            color:"#00cc99"
+        }
+    },
+    overrides:{
+        MuiTableHead:{
+            root:{
+                backgroundColor: '#8fe19f'
+            }
+        }
+    }
+
+});
+
 const styles = theme => ({
     root: {
         flexGrow: 1,
@@ -43,21 +80,20 @@ class App extends Component {
         const {classes} = this.props;
 
         return (
-            <div className={classes.root}>
-                <Header/>
-
-                <div className={classes.contents}>
-                    <QueEs/>
-                    <Sistemas/>
-                    <QueHacemos/>
-                    <QueSigue/>
-
+            <MuiThemeProvider theme ={theme}>
+                <div className={classes.root}>
+                    <Header/>
+                    <div className={classes.contents}>
+                        <QueEs/>
+                        <Sistemas/>
+                        <QueHacemos/>
+                        <QueSigue/>
+                    </div>
+                    <Footer/>
                 </div>
-
-                <Footer/>
-            </div>
+            </MuiThemeProvider>
         );
-  }
+    }
 }
 
 App.propTypes = {

@@ -2,6 +2,7 @@ import React from 'react';
 import Typography from '@material-ui/core/Typography';
 import {withStyles} from '@material-ui/core/styles';
 import PropTypes from 'prop-types';
+import PDNAppBar from './PDNAppBar';
 
 
 const styles = theme => ({
@@ -19,9 +20,9 @@ class Header extends React.Component{
         return (
             <div className={classes.root}>
 
+                <PDNAppBar/>
                 <Typography>Plataforma Digital Nacional</Typography>
                 <Typography>Inteligencia de Datos Anticorrupcion</Typography>
-
                 <div>Beta</div>
 
             </div>
