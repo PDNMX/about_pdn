@@ -18,7 +18,7 @@ class Footer extends React.Component{
         return (
             <div className={classes.root}>
                 <Typography>
-                    Conoce más en <a href="https://www.gob.mx/sesna/">www.gob.mx/sesna/</a> o escribenos a: <b>contactosesna@sesna.gob.mx</b>
+                    Conoce más en <a href="https://www.gob.mx/sesna">www.gob.mx/sesna</a> o escribenos a: <b>contactosesna@sesna.gob.mx</b>
                 </Typography>
             </div>
         )

@@ -43,7 +43,7 @@ class PDNAppBar extends React.Component {
             <div className={classes.root}>
                 <AppBar color="default"  position="static" >
                     <Toolbar>
-                        <IconButton className={classes.menuButton} color="inherit" aria-label="Menu">
+                        <IconButton className={classes.menuButton} color="inherit" aria-label="Menu" href='/'>
                             <img src={imgHeader} alt="logoPDN" style={{width:'55px'}}/>
 
                         </IconButton>
