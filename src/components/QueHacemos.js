@@ -12,6 +12,9 @@ const styles = theme => ({
     },
     ejes: {
         width: "400px"
+    },
+    itemCentered:{
+        textAlign: 'center'
     }
 });
 
@@ -22,7 +25,7 @@ class QueHacemos extends React.Component{
             <div>
 
                 <Grid container spacing={24}>
-                    <Grid item xs={6}>
+                    <Grid item xs={6} className={classes.itemCentered}>
                         <img src={Bd} alt="PDN" className={classes.bd}/>
                     </Grid>
 
@@ -50,7 +53,7 @@ class QueHacemos extends React.Component{
                             inteligentes, eficientes y eficaces para combatir la corrupción, de manera multidisciplinaria, colaborativa y multisectorial.
                         </Typography>
                     </Grid>
-                    <Grid item xs={6}>
+                    <Grid item xs={6} className={classes.itemCentered}>
                         <img src = {Ejes} alt="Ejes" className={classes.ejes}/>
                     </Grid>
                 </Grid>

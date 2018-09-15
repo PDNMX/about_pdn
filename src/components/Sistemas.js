@@ -15,6 +15,9 @@ const styles = theme => ({
 
     icons: {
         width: '80px'
+    },
+    item: {
+        textAlign: 'center'
     }
 
 });
@@ -33,23 +36,43 @@ class Sistemas extends React.Component {
                         </Typography>
                     </Grid>
 
-                    <Grid item xs={4}>
+                    <Grid item xs={4} className={ classes.item }>
                         <img className={classes.icons} src={s1} alt="Sistema 1"/>
+                        <Typography>Declaraciones patrimonial, de intereses y constancia
+                        de declaración fiscal
+                        </Typography>
                     </Grid>
-                    <Grid item xs={4}>
+                    <Grid item xs={4} className={classes.item}>
                         <img className={classes.icons} src={s2} alt="Sistema 2"/>
+                        <Typography>
+                            Servidores públicos que intervienen en procedimientos de
+                            contratación
+                        </Typography>
                     </Grid>
-                    <Grid item xs={4}>
+                    <Grid item xs={4} className = {classes.item}>
                         <img className={classes.icons} src={s3} alt="Sistema 3"/>
+                        <Typography>
+                            Contrataciones Públicas
+                        </Typography>
                     </Grid>
-                    <Grid item xs={4}>
+                    <Grid item xs={4} className = {classes.item }>
                         <img className={classes.icons} src={s4} alt="Sistema 4"/>
+                        <Typography>
+                            Denuncias por faltas administrativas y hechos de corrupción
+                        </Typography>
                     </Grid>
-                    <Grid item xs={4}>
+                    <Grid item xs={4} className={classes.item}>
                         <img className={classes.icons} src={s5} alt="Sistema 5"/>
+                        <Typography>
+                            Información y comunicación del Sistema Nacional Anticorrupción
+                            y el Sistema Nacional de Fiscalización
+                        </Typography>
                     </Grid>
-                    <Grid item xs={4}>
+                    <Grid item xs={4} className={classes.item }>
                         <img className={classes.icons} src={s6} alt="Sistema 6"/>
+                        <Typography>
+                            Servidores públicos y particulares sancionados
+                        </Typography>
                     </Grid>
 
                 </Grid>

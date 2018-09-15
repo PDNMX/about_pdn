@@ -11,7 +11,7 @@ const styles = theme => ({
         textAlign: 'center'
     },
     mapita: {
-        width: "200px"
+        maxWidth: "70%"
     }
 });
 
