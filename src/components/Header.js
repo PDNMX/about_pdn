@@ -3,11 +3,14 @@ import Typography from '@material-ui/core/Typography';
 import {withStyles} from '@material-ui/core/styles';
 import PropTypes from 'prop-types';
 import PDNAppBar from './PDNAppBar';
+import bgi from '../assets/textura.jpg';
 
 
 const styles = theme => ({
     root: {
-        textAlign: 'center'
+        textAlign: 'center',
+        backgroundImage: `url(${bgi})`,
+        minHeight: '360px'
     }
 
 });
