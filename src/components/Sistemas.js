@@ -2,6 +2,7 @@ import React from 'react';
 import Typography from '@material-ui/core/Typography';
 import {withStyles} from '@material-ui/core/styles';
 import PropTypes from 'prop-types';
+import Grid from '@material-ui/core/Grid';
 
 import s1 from '../assets/icono1.svg';
 import s2 from '../assets/icono2.svg';
@@ -25,21 +26,33 @@ class Sistemas extends React.Component {
 
         return (
             <div>
-                <Typography variant={'title'}>
-                    Sistemas Prioritarios
-                </Typography>
+                <Grid container spacing={24}>
+                    <Grid item xs={12}>
+                        <Typography variant={'title'}>
+                            Sistemas Prioritarios
+                        </Typography>
+                    </Grid>
 
-                <img className={classes.icons} src={s1} alt="Sistema 1"/>
-                <img className={classes.icons} src={s2} alt="Sistema 2"/>
-                <img className={classes.icons} src={s3} alt="Sistema 3"/>
-                <img className={classes.icons} src={s4} alt="Sistema 4"/>
-                <img className={classes.icons} src={s5} alt="Sistema 5"/>
-                <img className={classes.icons} src={s6} alt="Sistema 6"/>
+                    <Grid item xs={4}>
+                        <img className={classes.icons} src={s1} alt="Sistema 1"/>
+                    </Grid>
+                    <Grid item xs={4}>
+                        <img className={classes.icons} src={s2} alt="Sistema 2"/>
+                    </Grid>
+                    <Grid item xs={4}>
+                        <img className={classes.icons} src={s3} alt="Sistema 3"/>
+                    </Grid>
+                    <Grid item xs={4}>
+                        <img className={classes.icons} src={s4} alt="Sistema 4"/>
+                    </Grid>
+                    <Grid item xs={4}>
+                        <img className={classes.icons} src={s5} alt="Sistema 5"/>
+                    </Grid>
+                    <Grid item xs={4}>
+                        <img className={classes.icons} src={s6} alt="Sistema 6"/>
+                    </Grid>
 
-
-
-
-
+                </Grid>
 
             </div>
         )

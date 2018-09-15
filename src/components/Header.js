@@ -5,10 +5,14 @@ import PropTypes from 'prop-types';
 import PDNAppBar from './PDNAppBar';
 import bgi from '../assets/textura.jpg';
 import PDNLogo from '../assets/logo-PDN.svg';
+//import Grid from '@material-ui/core/Grid';
+import Chip from '@material-ui/core/Chip';
 
 
 const styles = theme => ({
     root: {
+        align: 'center',
+        alignItems: 'center',
         textAlign: 'center',
         backgroundImage: `url(${bgi})`,
         minHeight: '360px'
@@ -21,6 +25,10 @@ const styles = theme => ({
     },
     pdnLogo: {
         maxWidth: '250px'
+    },
+    beta:{
+        backgroundColor: '#96cb99',
+        width: '70px'
     }
 
 });
@@ -32,12 +40,11 @@ class Header extends React.Component{
         const {classes} = this.props;
         return (
             <div className={classes.root}>
-
                 <PDNAppBar/>
                 <img src={PDNLogo} alt="PDN" className={classes.pdnLogo}/>
                 <Typography variant="headline" className={classes.pdn}>Plataforma Digital Nacional</Typography>
                 <Typography variant="headline" className={classes.inteligencia}>Inteligencia de Datos Anticorrupcion</Typography>
-                <div>BETA</div>
+                <Chip label="BETA" className={classes.beta}/>
 
             </div>
         );

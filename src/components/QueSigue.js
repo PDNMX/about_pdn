@@ -3,6 +3,7 @@ import Typography from '@material-ui/core/Typography';
 import {withStyles} from '@material-ui/core/styles';
 import PropTypes from 'prop-types';
 import Chrono from '../assets/grafico-cronograma.svg';
+import Grid from '@material-ui/core/Grid';
 
 const styles = theme => ({
     root: {
@@ -19,9 +20,20 @@ class QueSigue extends React.Component{
 
         return (
             <div className={classes.root}>
-                <Typography variant="title">
-                ¿Qué sigue?
-                </Typography>
+                <Grid container spacing ={24}>
+                    <Grid item xs={6}>
+                        <Typography variant="title">
+                            ¿Qué sigue?
+                        </Typography>
+                    </Grid>
+                    <Grid item xs={6}>
+                        <Typography>
+                            La construcción de la PDN empezará con seis
+                            sistemas que contienen datos estratégicos para la
+                            lucha contra la corrupción.
+                        </Typography>
+                    </Grid>
+                </Grid>
 
                 <img src={Chrono} alt="Cronograma" className={classes.chrono}/>
             </div>
