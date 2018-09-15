@@ -1,6 +1,7 @@
 import React from 'react';
 import Typography from '@material-ui/core/Typography';
 import {withStyles} from '@material-ui/core/styles';
+import mapita from '../assets/mapa.svg';
 
 const styles = theme => ({
     root : {
@@ -8,6 +9,9 @@ const styles = theme => ({
     },
     title: {
         textAlign: 'center'
+    },
+    mapita: {
+        width: "200px"
     }
 });
 
@@ -23,6 +27,7 @@ class QueEs extends React.Component{
                     <Typography variant="title">Plataforma Digital Nacional</Typography>
                 </div>
 
+                <img src={mapita} alt="Mapita" className={classes.mapita}/>
 
                 <Typography>
                     Bajo una perpectiva de autonomía, neutralidad y análisis, desde la <b>Plataforma Digital Nacional (PDN)</b>
