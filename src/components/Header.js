@@ -4,6 +4,7 @@ import {withStyles} from '@material-ui/core/styles';
 import PropTypes from 'prop-types';
 import PDNAppBar from './PDNAppBar';
 import bgi from '../assets/textura.jpg';
+import PDNLogo from '../assets/logo-PDN.svg';
 
 
 const styles = theme => ({
@@ -11,6 +12,15 @@ const styles = theme => ({
         textAlign: 'center',
         backgroundImage: `url(${bgi})`,
         minHeight: '360px'
+    },
+    pdn:{
+        color: '#fff'
+    },
+    inteligencia: {
+        color: '#96cb99'
+    },
+    pdnLogo: {
+        maxWidth: '250px'
     }
 
 });
@@ -24,9 +34,10 @@ class Header extends React.Component{
             <div className={classes.root}>
 
                 <PDNAppBar/>
-                <Typography>Plataforma Digital Nacional</Typography>
-                <Typography>Inteligencia de Datos Anticorrupcion</Typography>
-                <div>Beta</div>
+                <img src={PDNLogo} alt="PDN" className={classes.pdnLogo}/>
+                <Typography variant="headline" className={classes.pdn}>Plataforma Digital Nacional</Typography>
+                <Typography variant="headline" className={classes.inteligencia}>Inteligencia de Datos Anticorrupcion</Typography>
+                <div>BETA</div>
 
             </div>
         );
