@@ -22,7 +22,11 @@ const styles = theme => ({
     },
     chip: {
         background: '#96cb99',
-        color: '#e6e6e6'
+        color: '#fff',
+        fontSize: '55px',
+        height: '55px',
+        width: '55px',
+        borderRadius: '50%'
     }
 
 });
