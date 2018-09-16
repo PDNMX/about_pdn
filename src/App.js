@@ -89,8 +89,10 @@ class App extends Component {
                     <div className={classes.contents}>
                         <Sistemas/>
                     </div>
+                    <div style={{background: '#37464f'}}>
                     <div className={classes.contents}>
                         <QueHacemos/>
+                    </div>
                     </div>
 
                     <div style={{background: "#cdcdcd"}}>

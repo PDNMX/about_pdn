@@ -6,8 +6,8 @@ import PropTypes from 'prop-types';
 const styles  = theme => ({
     root: {
         textAlign: 'center',
-        paddingTop: theme.spacing.unit * 5,
-        paddingBottom: theme.spacing.unit * 5,
+        paddingTop: theme.spacing.unit * 4,
+        paddingBottom: theme.spacing.unit * 4,
         background: "#fff"
     }
 });

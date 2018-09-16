@@ -11,6 +11,10 @@ const styles = theme => ({
     chrono:{
         width: '90%',
         fontFamily: 'Roboto'
+    },
+    itemCentered: {
+        textAlign: 'center',
+        maxWidth: '40%'
     }
 });
 
@@ -33,9 +37,10 @@ class QueSigue extends React.Component{
                             lucha contra la corrupción.
                         </Typography>
                     </Grid>
+                    <Grid item xs={12} className={classes.itemCentered}>
+                        <img src={Chrono} alt="Cronograma" className={classes.chrono}/>
+                    </Grid>
                 </Grid>
-
-                <img src={Chrono} alt="Cronograma" className={classes.chrono}/>
             </div>
         )
     }
