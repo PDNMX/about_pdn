@@ -60,8 +60,8 @@ const styles = theme => ({
         paddingBottom: theme.spacing.unit * 5,
         [theme.breakpoints.up('sm')]:{
             //maxWidth: 1024
-            marginLeft: theme.spacing.unit * 15,
-            marginRight: theme.spacing.unit * 15
+            marginLeft: theme.spacing.unit * 25,
+            marginRight: theme.spacing.unit * 25
         },
         [theme.breakpoints.down('sm')]:{
             marginLeft: theme.spacing.unit,

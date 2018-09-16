@@ -23,7 +23,7 @@ class QueEs extends React.Component{
         return (
             <div>
                 <div className={classes.title}>
-                    <Typography style={{color:'#96cb99'}} variant="subtitle">¿Qué es la</Typography>
+                    <Typography style={{color:'#96cb99'}} variant="subheading">¿Qué es la</Typography>
                     <Typography variant="title" style={{color: '#96cb99'}}>Plataforma Digital Nacional</Typography>
                 </div>
 

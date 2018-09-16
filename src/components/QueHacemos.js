@@ -15,6 +15,19 @@ const styles = theme => ({
     },
     itemCentered:{
         textAlign: 'center'
+    },
+    greenText: {
+        color: '#96cb99'
+    },
+    whiteText: {
+        color: '#e6e6e6'
+    },
+    bullet: {
+        backgroundColor: '#96cb99',
+        height: '15px',
+        width: '15px',
+        borderRadius: '50%',
+        display: 'inline-block'
     }
 });
 
@@ -41,19 +54,19 @@ class QueHacemos extends React.Component{
                     </Grid>
 
                     <Grid item xs={6}>
-                        <Typography  style={{color: '#96cb99'}} variant="title">
+                        <Typography  className={classes.greenText} variant="title">
                             ¿Qué estamos haciendo?
                         </Typography>
-                        <Typography  style={{color: '#e6e6e6'}}>
+                        <Typography  className={classes.whiteText}>
                             Trabajamos en cinco ejes clave para desarrollar y fomentar el uso de la Plataforma
-                            <ul>
-                                <li>Diseño centrado en las usuarias-os y sus necesidades</li>
-                                <li>Construcción gradual, modular, escalable, ágil y flexible</li>
-                                <li>Datos interoperables y abiertos</li>
-                                <li>Seguridad de la información y protección de datos personales</li>
-                                <li>Creación de impacto y entrega de valor público en el centro</li>
-                            </ul>
                         </Typography>
+
+                        <Typography className={classes.whiteText}> <span className={classes.bullet}/> Diseño centrado en las usuarias-os y sus necesidades</Typography>
+                        <Typography className={classes.whiteText}> <span className={classes.bullet}/> Construcción gradual, modular, escalable, ágil y flexible</Typography>
+                        <Typography className={classes.whiteText}> <span className={classes.bullet}/> Datos interoperables y abiertos</Typography>
+                        <Typography className={classes.whiteText}> <span className={classes.bullet}/> Seguridad de la información y protección de datos personales</Typography>
+                        <Typography className={classes.whiteText}> <span className={classes.bullet}/> Creación de impacto y entrega de valor público en el centro</Typography>
+
                     </Grid>
 
                     <Grid item xs={6} className={classes.itemCentered}>
