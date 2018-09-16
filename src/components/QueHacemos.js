@@ -55,7 +55,7 @@ class QueHacemos extends React.Component{
                             </ul>
                         </Typography>
                     </Grid>
-                    
+
                     <Grid item xs={6} className={classes.itemCentered}>
                         <img src = {Ejes} alt="Ejes" className={classes.ejes}/>
                     </Grid>
