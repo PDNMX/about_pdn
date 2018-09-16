@@ -9,12 +9,11 @@ const styles = theme => ({
     root: {
     },
     chrono:{
-        width: '90%',
+        maxWidth: '750px',
         fontFamily: 'Roboto'
     },
     itemCentered: {
-        textAlign: 'center',
-        maxWidth: '40%'
+        textAlign: 'center'
     }
 });
 

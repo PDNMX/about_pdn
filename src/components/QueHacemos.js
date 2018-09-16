@@ -29,6 +29,17 @@ class QueHacemos extends React.Component{
                         <img src={Bd} alt="PDN" className={classes.bd}/>
                     </Grid>
 
+
+
+                    <Grid item xs={6}>
+                        <Typography>
+                            La PDN permitirá que las base de datos de los sistemas estén estandarizadas y sean interoperables.
+                            <br/>
+                            El objetivo es contar con datos de calidad, para apoyar esfuerzos ecistentes y detonar nuevos mecanismos
+                            inteligentes, eficientes y eficaces para combatir la corrupción, de manera multidisciplinaria, colaborativa y multisectorial.
+                        </Typography>
+                    </Grid>
+
                     <Grid item xs={6}>
                         <Typography>
                             ¿Qué estamos haciendo?
@@ -44,15 +55,7 @@ class QueHacemos extends React.Component{
                             </ul>
                         </Typography>
                     </Grid>
-
-                    <Grid item xs={6}>
-                        <Typography>
-                            La PDN permitirá que las base de datos de los sistemas estén estandarizadas y sean interoperables.
-                            <br/>
-                            El objetivo es contar con datos de calidad, para apoyar esfuerzos ecistentes y detonar nuevos mecanismos
-                            inteligentes, eficientes y eficaces para combatir la corrupción, de manera multidisciplinaria, colaborativa y multisectorial.
-                        </Typography>
-                    </Grid>
+                    
                     <Grid item xs={6} className={classes.itemCentered}>
                         <img src = {Ejes} alt="Ejes" className={classes.ejes}/>
                     </Grid>

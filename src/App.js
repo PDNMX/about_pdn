@@ -86,16 +86,18 @@ class App extends Component {
                     <div className={classes.contents}>
                         <QueEs/>
                     </div>
-                    <div className={classes.contents}>
-                        <Sistemas/>
+                    <div style={{background: "#e6e6e6"}}>
+                        <div className={classes.contents}>
+                            <Sistemas/>
+                        </div>
                     </div>
                     <div style={{background: '#37464f'}}>
-                    <div className={classes.contents}>
-                        <QueHacemos/>
-                    </div>
+                        <div className={classes.contents}>
+                            <QueHacemos/>
+                        </div>
                     </div>
 
-                    <div style={{background: "#cdcdcd"}}>
+                    <div style={{background: "#e6e6e6"}}>
                         <div className={classes.contents}>
                             <QueSigue/>
                         </div>
