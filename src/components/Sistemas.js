@@ -3,6 +3,7 @@ import Typography from '@material-ui/core/Typography';
 import {withStyles} from '@material-ui/core/styles';
 import PropTypes from 'prop-types';
 import Grid from '@material-ui/core/Grid';
+import Chip from '@material-ui/core/Chip';
 
 import s1 from '../assets/icono1.svg';
 import s2 from '../assets/icono2.svg';
@@ -18,6 +19,10 @@ const styles = theme => ({
     },
     item: {
         textAlign: 'center'
+    },
+    chip: {
+        background: '#96cb99',
+        color: '#e6e6e6'
     }
 
 });
@@ -32,7 +37,7 @@ class Sistemas extends React.Component {
                 <Grid container spacing={24}>
                     <Grid item xs={12}>
                         <Typography variant={'title'}>
-                            Sistemas Prioritarios
+                            <Chip label="6" className={classes.chip}/> Sistemas Prioritarios
                         </Typography>
                     </Grid>
 
