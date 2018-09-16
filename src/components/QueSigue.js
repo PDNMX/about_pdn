@@ -24,7 +24,7 @@ class QueSigue extends React.Component{
             <div className={classes.root}>
                 <Grid container spacing ={24}>
                     <Grid item xs={6}>
-                        <Typography variant="title">
+                        <Typography variant="display3">
                             ¿Qué sigue?
                         </Typography>
                     </Grid>
