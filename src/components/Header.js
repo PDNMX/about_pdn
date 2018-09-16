@@ -24,7 +24,8 @@ const styles = theme => ({
         color: '#96cb99'
     },
     pdnLogo: {
-        maxWidth: '250px'
+        maxWidth: '250px',
+        paddingTop: '40px'
     },
     beta:{
         backgroundColor: '#96cb99',

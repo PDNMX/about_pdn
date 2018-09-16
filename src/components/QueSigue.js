@@ -9,8 +9,7 @@ const styles = theme => ({
     root: {
     },
     chrono:{
-        maxWidth: '750px',
-        fontFamily: 'Roboto'
+        maxWidth: '750px'
     },
     itemCentered: {
         textAlign: 'center'

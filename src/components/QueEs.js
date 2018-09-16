@@ -37,7 +37,7 @@ class QueEs extends React.Component{
                     <Grid item xs={6}>
 
                         <Typography>
-                            Bajo una perpectiva de autonomía, neutralidad y análisis, desde la <b>Plataforma Digital Nacional (PDN)</b>
+                            Bajo una perpectiva de autonomía, neutralidad y análisis, desde la <b>Plataforma Digital Nacional (PDN) </b>
                             trabajamos para construir una fuente de <b>inteligencia anticorrupción</b>, basada inicialmente, en datos
                             de <b>6 sistemas prioritarios</b> contemplados en la Ley General del Sistema Nacional Anticorrupción (LGSNA).
                         </Typography>
