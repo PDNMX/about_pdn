@@ -36,7 +36,7 @@ class Sistemas extends React.Component {
             <div>
                 <Grid container spacing={24}>
                     <Grid item xs={12}>
-                        <Typography variant={'title'}>
+                        <Typography variant={'title'} style={{color: '#96cb99'}}>
                             <Chip label="6" className={classes.chip}/> Sistemas Prioritarios
                         </Typography>
                     </Grid>

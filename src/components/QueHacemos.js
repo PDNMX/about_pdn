@@ -32,7 +32,7 @@ class QueHacemos extends React.Component{
 
 
                     <Grid item xs={6}>
-                        <Typography>
+                        <Typography style={{color: '#e6e6e6'}}>
                             La PDN permitirá que las base de datos de los sistemas estén estandarizadas y sean interoperables.
                             <br/>
                             El objetivo es contar con datos de calidad, para apoyar esfuerzos ecistentes y detonar nuevos mecanismos
@@ -41,10 +41,10 @@ class QueHacemos extends React.Component{
                     </Grid>
 
                     <Grid item xs={6}>
-                        <Typography>
+                        <Typography  style={{color: '#96cb99'}} variant="title">
                             ¿Qué estamos haciendo?
                         </Typography>
-                        <Typography>
+                        <Typography  style={{color: '#e6e6e6'}}>
                             Trabajamos en cinco ejes clave para desarrollar y fomentar el uso de la Plataforma
                             <ul>
                                 <li>Diseño centrado en las usuarias-os y sus necesidades</li>
