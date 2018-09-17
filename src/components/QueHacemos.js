@@ -8,10 +8,10 @@ import Grid from '@material-ui/core/Grid';
 
 const styles = theme => ({
     bd: {
-        width: "200px"
+        maxWidth: "200px"
     },
     ejes: {
-        width: "400px"
+        maxWidth: "400px"
     },
     itemCentered:{
         textAlign: 'center'
