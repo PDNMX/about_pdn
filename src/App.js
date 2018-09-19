@@ -10,6 +10,8 @@ import Sectores from './components/Sectores';
 import QueHacemos from './components/QueHacemos';
 //import QueSigue from './components/QueSigue';
 import Objetivos from './components/Objetivos';
+import Carrusel from './components/Carrusel';
+import Uso from './components/Uso';
 
 import {createMuiTheme, MuiThemeProvider } from '@material-ui/core/styles';
 
@@ -108,6 +110,13 @@ class App extends Component {
                             <QueSigue/>
                         </div>
                     </div>*/}
+
+                    <div className={classes.contents}>
+                        <Carrusel/>
+                    </div>
+                    <div className={classes.contents}>
+                        <Uso/>
+                    </div>
 
 
                     <Footer/>
