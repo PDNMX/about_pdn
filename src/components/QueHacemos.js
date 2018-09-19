@@ -37,6 +37,13 @@ class QueHacemos extends React.Component{
         return (
             <div>
 
+
+                <Typography variant="title">
+                    Conoce lo que estamos haciendo para construir la plataforma
+                </Typography>
+
+                <br/>
+
                 <Grid container spacing={24}>
                     <Grid item xs={6} className={classes.itemCentered}>
                         <img src={Bd} alt="PDN" className={classes.bd}/>
@@ -56,9 +63,6 @@ class QueHacemos extends React.Component{
                     </Grid>
 
                     <Grid item xs={6}>
-                        <Typography  className={classes.greenText} variant="title">
-                            ¿Qué estamos haciendo?
-                        </Typography>
                         <Typography  className={classes.whiteText}>
                             Trabajamos en cinco ejes clave para desarrollar y fomentar el uso de la Plataforma
                         </Typography>
