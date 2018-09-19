@@ -37,9 +37,14 @@ class QueEs extends React.Component{
                     <Grid item xs={6}>
 
                         <Typography>
-                            Bajo una perpectiva de autonomía, neutralidad y análisis, desde la <b>Plataforma Digital Nacional (PDN) </b>
-                            trabajamos para construir una fuente de <b>inteligencia anticorrupción</b>, basada inicialmente, en datos
-                            de <b>6 sistemas prioritarios</b> contemplados en la Ley General del Sistema Nacional Anticorrupción (LGSNA).
+                            La <b>Plataforma Digital Nacional (PDN) </b> es una fuente de
+                            <b>inteligencia anticorrupción</b> que creará impactto y generará valor para el gobierno y
+                            la sociedad, a partir de los datos.
+                        </Typography>
+                        <br/>
+                        <Typography>
+                            La Plataforma hará que toda la información anticorrupción del gobierno federal, estados, y
+                            Poderes, sea comparable y utilizable, empezando con <b>seis sectores estratégicos</b>:
                         </Typography>
                     </Grid>
                 </Grid>

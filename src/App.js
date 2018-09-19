@@ -6,9 +6,10 @@ import {withStyles} from '@material-ui/core/styles';
 import PropTypes from 'prop-types';
 
 import QueEs from './components/QueEs';
-import Sistemas from './components/Sistemas';
+import Sectores from './components/Sectores';
 import QueHacemos from './components/QueHacemos';
-import QueSigue from './components/QueSigue';
+//import QueSigue from './components/QueSigue';
+import Objetivos from './components/Objetivos';
 
 import {createMuiTheme, MuiThemeProvider } from '@material-ui/core/styles';
 
@@ -89,8 +90,12 @@ class App extends Component {
                     </div>
                     <div style={{background: "#e6e6e6"}}>
                         <div className={classes.contents}>
-                            <Sistemas/>
+                            <Sectores/>
                         </div>
+                    </div>
+
+                    <div className={classes.contents}>
+                        <Objetivos/>
                     </div>
                     <div style={{background: '#37464f'}}>
                         <div className={classes.contents}>
@@ -98,11 +103,13 @@ class App extends Component {
                         </div>
                     </div>
 
-                    <div style={{background: "#e6e6e6"}}>
+                    {/*<div style={{background: "#e6e6e6"}}>
                         <div className={classes.contents}>
                             <QueSigue/>
                         </div>
-                    </div>
+                    </div>*/}
+
+
                     <Footer/>
                 </div>
             </MuiThemeProvider>

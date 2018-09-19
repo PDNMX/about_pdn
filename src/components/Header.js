@@ -25,7 +25,7 @@ const styles = theme => ({
     },
     pdnLogo: {
         maxWidth: '250px',
-        paddingTop: '40px'
+        paddingTop: '30px'
     },
     beta:{
         backgroundColor: '#96cb99',
@@ -45,6 +45,7 @@ class Header extends React.Component{
                 <img src={PDNLogo} alt="PDN" className={classes.pdnLogo}/>
                 <Typography variant="headline" className={classes.pdn}>Plataforma Digital Nacional</Typography>
                 <Typography variant="headline" className={classes.inteligencia}>Inteligencia de Datos Anticorrupcion</Typography>
+                <br/>
                 <Chip label="BETA" className={classes.beta}/>
 
             </div>

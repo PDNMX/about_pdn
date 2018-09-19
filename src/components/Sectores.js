@@ -31,7 +31,7 @@ const styles = theme => ({
 
 });
 
-class Sistemas extends React.Component {
+class Sectores extends React.Component {
 
     render () {
         const {classes } = this.props;
@@ -41,21 +41,19 @@ class Sistemas extends React.Component {
                 <Grid container spacing={24}>
                     <Grid item xs={12}>
                         <Typography variant={'display3'} style={{color: '#96cb99'}}>
-                            <Chip label={6} className={classes.chip}/> Sistemas Prioritarios
+                            {/*<Chip label={6} className={classes.chip}/>*/} Sectores estratégicos
                         </Typography>
                     </Grid>
 
                     <Grid item xs={4} className={ classes.item }>
                         <img className={classes.icons} src={s1} alt="Sistema 1"/>
-                        <Typography>Declaraciones patrimonial, de intereses y constancia
-                        de declaración fiscal
+                        <Typography>Declaraciones
                         </Typography>
                     </Grid>
                     <Grid item xs={4} className={classes.item}>
                         <img className={classes.icons} src={s2} alt="Sistema 2"/>
                         <Typography>
-                            Servidores públicos que intervienen en procedimientos de
-                            contratación
+                            Servidores públicos que intervienen en contrataciones
                         </Typography>
                     </Grid>
                     <Grid item xs={4} className = {classes.item}>
@@ -67,14 +65,13 @@ class Sistemas extends React.Component {
                     <Grid item xs={4} className = {classes.item }>
                         <img className={classes.icons} src={s4} alt="Sistema 4"/>
                         <Typography>
-                            Denuncias por faltas administrativas y hechos de corrupción
+                            Denuncias
                         </Typography>
                     </Grid>
                     <Grid item xs={4} className={classes.item}>
                         <img className={classes.icons} src={s5} alt="Sistema 5"/>
                         <Typography>
-                            Información y comunicación del Sistema Nacional Anticorrupción
-                            y el Sistema Nacional de Fiscalización
+                            Fiscalización
                         </Typography>
                     </Grid>
                     <Grid item xs={4} className={classes.item }>
@@ -91,8 +88,8 @@ class Sistemas extends React.Component {
     }
 }
 
-Sistemas.propTypes = {
+Sectores.propTypes = {
     classes: PropTypes.object.isRequired
 };
 
-export default withStyles(styles)(Sistemas);
+export default withStyles(styles)(Sectores);
