@@ -4,11 +4,16 @@ import Typography from '@material-ui/core/Typography';
 import Paper from '@material-ui/core/Paper';
 
 
-const styles = theme => ({root: {},
-paper : {
-    padding: theme.spacing.unit * 2,
-    marginTop: '20px'
-}
+const styles = theme => ({
+    root: {},
+    paper : {
+        padding: theme.spacing.unit * 2,
+        marginTop: '20px',
+        borderRadius: 0
+    },
+    li: {
+        paddingBottom: theme.spacing.unit *2
+    }
 });
 
 class Uso extends React.Component{

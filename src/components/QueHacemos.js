@@ -24,10 +24,20 @@ const styles = theme => ({
     },
     bullet: {
         backgroundColor: '#96cb99',
-        height: '15px',
-        width: '15px',
+        height: '12px',
+        width: '12px',
         borderRadius: '50%',
-        display: 'inline-block'
+        display: 'inline-block',
+        marginLeft: '-20px',
+        //marginTop: '-10px'
+    },
+    ul: {
+        listStyle: 'none',
+        //marginLeft: 0,
+        paddingLeft: '15px'
+    },
+    li: {
+        paddingBottom: theme.spacing.unit *2
     }
 });
 
@@ -38,7 +48,7 @@ class QueHacemos extends React.Component{
             <div>
 
 
-                <Typography variant="title">
+                <Typography variant="title" className={classes.greenText}>
                     Conoce lo que estamos haciendo para construir la plataforma
                 </Typography>
 
@@ -68,12 +78,13 @@ class QueHacemos extends React.Component{
                         </Typography>
 
                         <br/>
-                        <Typography className={classes.whiteText}> <span className={classes.bullet}/> Diseño centrado en las usuarias-os y sus necesidades</Typography>
-                        <Typography className={classes.whiteText}> <span className={classes.bullet}/> Construcción gradual, modular, escalable, ágil y flexible</Typography>
-                        <Typography className={classes.whiteText}> <span className={classes.bullet}/> Datos interoperables y abiertos</Typography>
-                        <Typography className={classes.whiteText}> <span className={classes.bullet}/> Seguridad de la información y protección de datos personales</Typography>
-                        <Typography className={classes.whiteText}> <span className={classes.bullet}/> Creación de impacto y entrega de valor público en el centro</Typography>
-
+                        <ul className={classes.ul}>
+                            <li className={classes.li}><Typography className={classes.whiteText}> <span className={classes.bullet}/> Diseño centrado en las usuarias-os y sus necesidades</Typography></li>
+                            <li className={classes.li}><Typography className={classes.whiteText}> <span className={classes.bullet}/> Construcción gradual, modular, escalable, ágil y flexible</Typography></li>
+                            <li className={classes.li}><Typography className={classes.whiteText}> <span className={classes.bullet}/> Datos interoperables y abiertos</Typography></li>
+                            <li className={classes.li}><Typography className={classes.whiteText}> <span className={classes.bullet}/> Seguridad de la información y protección de datos personales</Typography></li>
+                            <li className={classes.li}><Typography className={classes.whiteText}> <span className={classes.bullet}/> Creación de impacto y entrega de valor público en el centro</Typography></li>
+                        </ul>
                     </Grid>
 
                     <Grid item xs={6} className={classes.itemCentered}>
