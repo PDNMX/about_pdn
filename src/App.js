@@ -90,14 +90,16 @@ class App extends Component {
                     <div className={classes.contents}>
                         <QueEs/>
                     </div>
-                    <div style={{background: "#e6e6e6"}}>
+                    <div style={{background: "#f9f9f9"}}>
                         <div className={classes.contents}>
                             <Sectores/>
                         </div>
                     </div>
 
-                    <div className={classes.contents}>
-                        <Objetivos/>
+                    <div style={ {background: '#e6e6e6'}}>
+                        <div className={classes.contents}>
+                            <Objetivos/>
+                        </div>
                     </div>
                     <div style={{background: '#37464f'}}>
                         <div className={classes.contents}>
@@ -114,8 +116,10 @@ class App extends Component {
                     <div className={classes.contents}>
                         <Carrusel/>
                     </div>
-                    <div className={classes.contents}>
-                        <Uso/>
+                    <div style={{background: '#f9f9f9'}}>
+                        <div className={classes.contents}>
+                            <Uso/>
+                        </div>
                     </div>
 
 
