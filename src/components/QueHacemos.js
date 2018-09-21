@@ -63,18 +63,18 @@ class QueHacemos extends React.Component{
 
                     <Grid item xs={6}>
                         <Typography className={classes.whiteText}>
-                            La PDN permitirá que las base de datos de los sistemas estén estandarizadas y sean interoperables.
+                            La PDN permitirá que las base de datos de los sistemas <b className={classes.greenText}>estén estandarizadas y sean interoperables.</b>
                         </Typography>
                             <br/>
                         <Typography className={classes.whiteText}>
-                            El objetivo es contar con datos de calidad, para apoyar esfuerzos ecistentes y detonar nuevos mecanismos
-                            inteligentes, eficientes y eficaces para combatir la corrupción, de manera multidisciplinaria, colaborativa y multisectorial.
+                            El objetivo es contar con <b className={classes.greenText}>datos de calidad</b>, para apoyar esfuerzos ecistentes y detonar nuevos mecanismos
+                            inteligentes, eficientes y eficaces para combatir la corrupción, de manera <b className={classes.greenText}>multidisciplinaria, colaborativa y multisectorial.</b>
                         </Typography>
                     </Grid>
 
                     <Grid item xs={6}>
                         <Typography  className={classes.whiteText}>
-                            Trabajamos en cinco ejes clave para desarrollar y fomentar el uso de la Plataforma
+                            Trabajamos en <b className={classes.greenText}>cinco ejes</b> clave para desarrollar y fomentar el uso de la Plataforma
                         </Typography>
 
                         <br/>

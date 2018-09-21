@@ -27,6 +27,9 @@ const styles = theme => ({
     },
     li: {
         paddingBottom: theme.spacing.unit //*2
+    },
+    greenText: {
+        color: '#96cb99'
     }
 });
 
@@ -37,21 +40,21 @@ class Uso extends React.Component{
 
         return(
             <div>
-                <Typography variant="title">Conoce como se han usado los datos para combatir la corrupción en México:</Typography>
+                <Typography variant="title" className={classes.greenText}>Conoce como se han usado los datos para combatir la corrupción en México:</Typography>
 
                 <Paper className={classes.paper}>
                     <ul className={classes.ul}>
                         <li className={classes.li}>
-                            <Typography><span className={classes.bullet}/> Aristegui Noticias utilizó datos abiertos para investigas posibles casos de espionaje.</Typography>
+                            <Typography><span className={classes.bullet}/> <b className={classes.greenText}>Aristegui Noticias</b> utilizó datos abiertos para investigas posibles casos de espionaje.</Typography>
                         </li>
                         <li className={classes.li}>
-                            <Typography><span className={classes.bullet}/> Imco y OPI utilizaron datos de contrataciones para identificar riesgos e impulsar una cultura de prevención en contrataciones.</Typography>
+                            <Typography><span className={classes.bullet}/> <b className={classes.greenText}>Imco y OPI</b> utilizaron datos de contrataciones para identificar riesgos e impulsar una cultura de prevención en contrataciones.</Typography>
                         </li>
                         <li className={classes.li}>
-                            <Typography><span className={classes.bullet}/> Data Cívica utilizó datos abiertos para reconstruir las declaraciones patrimoniales de servidores públicos del gobierno.</Typography>
+                            <Typography><span className={classes.bullet}/> <b className={classes.greenText}>Data Cívica</b> utilizó datos abiertos para reconstruir las declaraciones patrimoniales de servidores públicos del gobierno.</Typography>
                         </li>
                         <li className={classes.li}>
-                            <Typography><span className={classes.bullet}/> Animal Político utilizó datos de auditorías y licitaciones para detectar desvíos de recursos, alho que ha sido utilizado como insumo
+                            <Typography><span className={classes.bullet}/> <b className={classes.greenText}>Animal Político</b> utilizó datos de auditorías y licitaciones para detectar desvíos de recursos, algo que ha sido utilizado como insumo
                                 en el proceso para sancionar a posibles involucrados.</Typography>
                         </li>
                     </ul>

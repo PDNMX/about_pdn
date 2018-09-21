@@ -22,6 +22,9 @@ const styles = theme => ({
     },
     li: {
       paddingBottom: theme.spacing.unit *2
+    },
+    greenText: {
+        color: '#96cb99'
     }
 });
 
@@ -37,27 +40,27 @@ class Objetivos extends React.Component{
                 </Typography>
                 <br/>
                 <Typography>
-                    User nuevas tecnologías, metodologías de trabajo, cuencia de datos e inteligencia artificial como insumos y
-                    apoyo al trabajo de las autoridades del Sistema Nacional Anticorrupción para:
+                    Usar <b className={classes.greenText}>nuevas tecnologías</b>, <b className={classes.greenText}>metodologías de trabajo</b>, <b className={classes.greenText}>ciencia de datos</b> e <b className={classes.greenText}>inteligencia artificial</b> como insumos y
+                    apoyo al trabajo de las autoridades del <b>Sistema Nacional Anticorrupción</b> para:
                 </Typography>
                 <br/>
                 <ul className={classes.ul}>
                     <li className={classes.li}>
-                        <Typography><span className={classes.bullet}/> Analizar, predecir y alertar a las autoridades sobre posibles riesgos de corrupción;</Typography>
+                        <Typography><span className={classes.bullet}/> <b>Analizar, predecir y alertar</b> a las autoridades sobre posibles riesgos de corrupción;</Typography>
                     </li>
                     <li className={classes.li}>
-                        <Typography><span className={classes.bullet}/> Automatizar procesos, evitar discrecionalidad, colusión y conflicto de interés;</Typography>
+                        <Typography><span className={classes.bullet}/> <b>Automatizar procesos, evitar discrecionalidad, colusión y conflicto de interés;</b></Typography>
                     </li>
                     <li className={classes.li}>
-                        <Typography><span className={classes.bullet}/> Promover el uso de los datos para respaldar procesos de sanción y como evidencia combatir la impunidad;</Typography>
+                        <Typography><span className={classes.bullet}/> <b>Promover el uso de los datos</b> para respaldar procesos de sanción y como evidencia combatir la impunidad;</Typography>
                     </li>
                     <li className={classes.li}>
-                        <Typography><span className={classes.bullet}/> Dar seguimiento, en tiempo real, a los procesos y proyectos de contratación pública, asegurar el cumplimiento de sus objetivos
+                        <Typography><span className={classes.bullet}/> <b>Dar seguimiento, en tiempo real</b>, a los procesos y proyectos de contratación pública, asegurar el cumplimiento de sus objetivos
                             y garantizar una mayor eficiencia en las compra públicas;
                         </Typography>
                     </li>
                     <li className={classes.li}>
-                        <Typography><span className={classes.bullet}/> Apoyar la participación ciudadana, poniendo al ciudadano al centro del combate a la corrupción.
+                        <Typography><span className={classes.bullet}/> <b>Apoyar la participación ciudadana</b>, poniendo al ciudadano al centro del combate a la corrupción.
                         </Typography>
                     </li>
                 </ul>
