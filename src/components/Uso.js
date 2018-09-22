@@ -9,7 +9,9 @@ const styles = theme => ({
     paper : {
         padding: theme.spacing.unit * 2,
         marginTop: '20px',
-        borderRadius: 0
+        borderRadius: 0,
+        borderColor: '#96cb99',
+        borderStyle: 'solid'
     },
     bullet: {
         backgroundColor: '#96cb99',
@@ -42,7 +44,7 @@ class Uso extends React.Component{
             <div>
                 <Typography variant="title" className={classes.greenText}>Conoce como se han usado los datos para combatir la corrupción en México:</Typography>
 
-                <Paper className={classes.paper}>
+                <div className={classes.paper}>
                     <ul className={classes.ul}>
                         <li className={classes.li}>
                             <Typography><span className={classes.bullet}/> <b className={classes.greenText}>Aristegui Noticias</b> utilizó datos abiertos para investigas posibles casos de espionaje.</Typography>
@@ -58,7 +60,7 @@ class Uso extends React.Component{
                                 en el proceso para sancionar a posibles involucrados.</Typography>
                         </li>
                     </ul>
-                </Paper>
+                </div>
 
             </div>
         );
