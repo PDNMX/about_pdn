@@ -59,25 +59,25 @@ class Sectores extends React.Component {
                     <Grid item xs={4} className = {classes.item}>
                         <img className={classes.icons} src={s3} alt="Sistema 3"/>
                         <Typography>
-                            Contrataciones Públicas
+                            Servidores públicos y particulares sancionados
                         </Typography>
                     </Grid>
                     <Grid item xs={4} className = {classes.item }>
                         <img className={classes.icons} src={s4} alt="Sistema 4"/>
                         <Typography>
-                            Denuncias
+                            Fiscalización
                         </Typography>
                     </Grid>
                     <Grid item xs={4} className={classes.item}>
                         <img className={classes.icons} src={s5} alt="Sistema 5"/>
                         <Typography>
-                            Fiscalización
+                            Denuncias
                         </Typography>
                     </Grid>
                     <Grid item xs={4} className={classes.item }>
                         <img className={classes.icons} src={s6} alt="Sistema 6"/>
                         <Typography>
-                            Servidores públicos y particulares sancionados
+                            Contrataciones Públicas
                         </Typography>
                     </Grid>
 
