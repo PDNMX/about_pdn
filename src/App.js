@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Header from './components/Header';
-import Footer from './components/Footer';
+//import Footer from './components/Footer';
 //import Typography from "@material-ui/core/Typography";
 import {withStyles} from '@material-ui/core/styles';
 import PropTypes from 'prop-types';
@@ -12,6 +12,7 @@ import QueHacemos from './components/QueHacemos';
 import Objetivos from './components/Objetivos';
 import Carrusel from './components/Carrusel';
 import Uso from './components/Uso';
+import Grid from '@material-ui/core/Grid';
 
 import {createMuiTheme, MuiThemeProvider } from '@material-ui/core/styles';
 
@@ -53,9 +54,9 @@ const theme = createMuiTheme({
 const styles = theme => ({
     root: {
         flexGrow: 1,
-        display: 'flex',
-        flexDirection: 'column',
-        height: '100vh'
+        //display: 'flex',
+        //flexDirection: 'column',
+        //height: '100vh'
     },
     contents: {
         flexGrow: 1,
@@ -76,6 +77,13 @@ const styles = theme => ({
         //textAlign: 'center',
         color: theme.palette.text.secondary,
     },
+    gridItem:{
+        maxWidth: 1024,
+        marginTop: theme.spacing.unit * 3,
+        marginBottom: theme.spacing.unit * 3,
+        marginLeft: theme.spacing.unit,
+        marginRight: theme.spacing.unit
+    }
 });
 
 class App extends Component {
@@ -87,25 +95,29 @@ class App extends Component {
             <MuiThemeProvider theme ={theme}>
                 <div className={classes.root}>
                     <Header/>
-                    <div className={classes.contents}>
-                        <QueEs/>
-                    </div>
-                    <div style={{background: "#f9f9f9"}}>
-                        <div className={classes.contents}>
-                            <Sectores/>
-                        </div>
-                    </div>
+                    <Grid container spacing={24} justify="center">
+                        <Grid item xs={12} className={classes.gridItem}>
+                            <QueEs/>
+                        </Grid>
+                    </Grid>
 
-                    <div style={ {background: '#e6e6e6'}}>
-                        <div className={classes.contents}>
+                    <Grid container spacing={24} justify="center" style={{background: "#f9f9f9"}}>
+                        <Grid item xs={12} className={classes.gridItem}>
+                            <Sectores/>
+                        </Grid>
+                    </Grid>
+
+                    <Grid container spacing={24} justify="center" style={{background: '#e6e6e6'}}>
+                        <Grid item xs={12} className={classes.gridItem}>
                             <Objetivos/>
-                        </div>
-                    </div>
-                    <div style={{background: '#37464f'}}>
-                        <div className={classes.contents}>
+                        </Grid>
+                    </Grid>
+
+                    <Grid container spacing={24} justify="center" style={{background: '#37464f'}}>
+                        <Grid item xs={12} className={classes.gridItem}>
                             <QueHacemos/>
-                        </div>
-                    </div>
+                        </Grid>
+                    </Grid>
 
                     {/*<div style={{background: "#e6e6e6"}}>
                         <div className={classes.contents}>
@@ -113,14 +125,17 @@ class App extends Component {
                         </div>
                     </div>*/}
 
-                    <div className={classes.contents}>
-                        <Carrusel/>
-                    </div>
-                    <div style={{background: '#f9f9f9'}}>
-                        <div className={classes.contents}>
+                    <Grid container justify="center" spacing={24}>
+                        <Grid item xs={12} className={classes.gridItem}>
+                            <Carrusel/>
+                        </Grid>
+                    </Grid>
+
+                    <Grid container justify="center" spacing={24} style={{background: '#f9f9f9'}}>
+                        <Grid item xs={12} className={classes.gridItem}>
                             <Uso/>
-                        </div>
-                    </div>
+                        </Grid>
+                    </Grid>
 
 
                     {/*<Footer/>*/}

@@ -7,9 +7,6 @@ const styles = theme => ({
     root : {
 
     },
-    title: {
-        textAlign: 'center'
-    },
     mapita: {
         maxWidth: "70%"
     },
@@ -25,10 +22,8 @@ class QueEs extends React.Component{
 
         return (
             <div>
-                <div className={classes.title}>
-                    <Typography style={{color:'#96cb99'}} variant="display2">¿Qué es la</Typography>
-                    <Typography variant="display3" style={{color: '#96cb99'}}>Plataforma Digital Nacional</Typography>
-                </div>
+
+                <Typography style={{color:'#96cb99'}} variant="title">¿Qué es la Plataforma Digital Nacional</Typography>
 
                 <br/>
 
