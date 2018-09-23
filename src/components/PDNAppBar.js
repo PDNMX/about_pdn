@@ -8,6 +8,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import IconButton from '@material-ui/core/IconButton';
 //import MenuIcon from '@material-ui/icons/Menu';
+import Grid from '@material-ui/core/Grid';
 
 
 const styles = theme => ({
@@ -20,16 +21,16 @@ const styles = theme => ({
     },
     menuButton: {
         [theme.breakpoints.up('sm')]:{
-            marginLeft: '80px'
+            //marginLeft: '80px'
         },
         [theme.breakpoints.down('sm')]:{
-            marginLeft: theme.spacing.unit
+            //marginLeft: theme.spacing.unit
         },
-        marginRight: 20,
+        //marginRight: 20,
     },
     lastButton: {
         [theme.breakpoints.up('sm')]: {
-            marginRight: '80px'
+            //marginRight: '80px'
         }
     }
 });
@@ -42,22 +43,26 @@ class PDNAppBar extends React.Component {
         return (
             <div className={classes.root}>
                 <AppBar color="default"  position="static" >
-                    <Toolbar>
-                        <IconButton className={classes.menuButton} color="inherit" aria-label="Menu" href='/'>
-                            <img src={imgHeader} alt="logoPDN" style={{width:'55px'}}/>
+                    <Grid container justify="center">
+                        <Grid item xs={12} style ={{maxWidth: '1024px'}}>
+                            <Toolbar>
+                                <IconButton className={classes.menuButton} color="inherit" aria-label="Menu" href='/'>
+                                    <img src={imgHeader} alt="logoPDN" style={{width:'55px'}}/>
 
-                        </IconButton>
-                        <Typography variant="title" color="inherit" className={classes.flex}>
+                                </IconButton>
+                                <Typography variant="title" color="inherit" className={classes.flex}>
 
-                        </Typography>
+                                </Typography>
 
-                        {/*<Button color="inherit" href="/datos">
+                                {/*<Button color="inherit" href="/datos">
                             Datos
                         </Button>*/}
-                        <Button color="inherit" href="/blog" className={classes.lastButton}>
-                            Blog
-                        </Button>
-                    </Toolbar>
+                                <Button color="inherit" href="/blog" className={classes.lastButton}>
+                                    Blog
+                                </Button>
+                            </Toolbar>
+                        </Grid>
+                    </Grid>
                 </AppBar>
             </div>
         );
