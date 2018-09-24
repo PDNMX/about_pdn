@@ -56,7 +56,7 @@ class Objetivos extends React.Component{
                     </li>
                     <li className={classes.li}>
                         <Typography><span className={classes.bullet}/> <b>Dar seguimiento, en tiempo real</b>, a los procesos y proyectos de contratación pública, asegurar el cumplimiento de sus objetivos
-                            y garantizar una mayor eficiencia en las compra públicas
+                            y garantizar una mayor eficiencia en las compras públicas
                         </Typography>
                     </li>
                     <li className={classes.li}>

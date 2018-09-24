@@ -42,7 +42,7 @@ class Uso extends React.Component{
 
         return(
             <div>
-                <Typography variant="title" className={classes.greenText}>Conoce como se han usado los datos para combatir la corrupción en México:</Typography>
+                <Typography variant="title" className={classes.greenText}>Conoce cómo se han usado los datos para combatir la corrupción en México:</Typography>
 
                 <div className={classes.paper}>
                     <ul className={classes.ul}>
