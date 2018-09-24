@@ -46,21 +46,21 @@ class Objetivos extends React.Component{
                 <br/>
                 <ul className={classes.ul}>
                     <li className={classes.li}>
-                        <Typography><span className={classes.bullet}/> <b>Analizar, predecir y alertar</b> a las autoridades sobre posibles riesgos de corrupción;</Typography>
+                        <Typography><span className={classes.bullet}/> <b>Analizar, predecir y alertar</b> a las autoridades sobre posibles riesgos de corrupción</Typography>
                     </li>
                     <li className={classes.li}>
-                        <Typography><span className={classes.bullet}/> <b>Automatizar procesos, evitar discrecionalidad, colusión y conflicto de interés;</b></Typography>
+                        <Typography><span className={classes.bullet}/> <b>Automatizar procesos, evitar discrecionalidad, colusión y conflicto de interés</b></Typography>
                     </li>
                     <li className={classes.li}>
-                        <Typography><span className={classes.bullet}/> <b>Promover el uso de los datos</b> para respaldar procesos de sanción y como evidencia combatir la impunidad;</Typography>
+                        <Typography><span className={classes.bullet}/> <b>Promover el uso de los datos</b> para respaldar procesos de sanción y como evidencia combatir la impunidad</Typography>
                     </li>
                     <li className={classes.li}>
                         <Typography><span className={classes.bullet}/> <b>Dar seguimiento, en tiempo real</b>, a los procesos y proyectos de contratación pública, asegurar el cumplimiento de sus objetivos
-                            y garantizar una mayor eficiencia en las compra públicas;
+                            y garantizar una mayor eficiencia en las compra públicas
                         </Typography>
                     </li>
                     <li className={classes.li}>
-                        <Typography><span className={classes.bullet}/> <b>Apoyar la participación ciudadana</b>, poniendo al ciudadano al centro del combate a la corrupción.
+                        <Typography><span className={classes.bullet}/> <b>Apoyar la participación ciudadana</b>, poniendo al ciudadano al centro del combate a la corrupción
                         </Typography>
                     </li>
                 </ul>

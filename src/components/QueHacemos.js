@@ -67,7 +67,7 @@ class QueHacemos extends React.Component{
                         </Typography>
                             <br/>
                         <Typography className={classes.whiteText}>
-                            El objetivo es contar con <b className={classes.greenText}>datos de calidad</b>, para apoyar esfuerzos ecistentes y detonar nuevos mecanismos
+                            El objetivo es contar con <b className={classes.greenText}>datos de calidad</b>, para apoyar esfuerzos existentes y detonar nuevos mecanismos
                             inteligentes, eficientes y eficaces para combatir la corrupción, de manera <b className={classes.greenText}>multidisciplinaria, colaborativa y multisectorial.</b>
                         </Typography>
                     </Grid>

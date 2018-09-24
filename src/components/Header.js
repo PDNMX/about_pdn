@@ -44,7 +44,7 @@ class Header extends React.Component{
                 <PDNAppBar/>
                 <img src={PDNLogo} alt="PDN" className={classes.pdnLogo}/>
                 <Typography variant="headline" className={classes.pdn}>Plataforma Digital Nacional</Typography>
-                <Typography variant="headline" className={classes.inteligencia}>Inteligencia de Datos Anticorrupcion</Typography>
+                <Typography variant="headline" className={classes.inteligencia}>Inteligencia de Datos Anticorrupción</Typography>
                 <br/>
                 {/*<Chip label="BETA" className={classes.beta}/>*/}
 
