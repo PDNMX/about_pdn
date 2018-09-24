@@ -41,7 +41,7 @@ class QueEs extends React.Component{
                         </Typography>
                         <br/>
                         <Typography>
-                            La Plataforma hará que toda la información anticorrupción del gobierno federal, estados, y
+                            La Plataforma hará que toda la información anticorrupción del Gobierno Federal, Estados, y
                             Poderes, sea comparable y utilizable, empezando con <b className={classes.greenText}>seis sectores estratégicos</b>:
                         </Typography>
                     </Grid>
