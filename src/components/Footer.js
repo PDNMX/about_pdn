@@ -1,14 +1,19 @@
 import React from 'react';
-import Typography from '@material-ui/core/Typography';
+//import Typography from '@material-ui/core/Typography';
 import {withStyles} from '@material-ui/core/styles';
 import PropTypes from 'prop-types';
+
+import SESNA from '../assets/LogotipoSESNA.svg';
 
 const styles  = theme => ({
     root: {
         textAlign: 'center',
-        paddingTop: theme.spacing.unit * 4,
-        paddingBottom: theme.spacing.unit * 4,
+        //paddingTop: theme.spacing.unit,
+        //paddingBottom: theme.spacing.unit,
         background: "#fff"
+    },
+    logo:{
+      maxWidth: '300px'
     }
 });
 
@@ -18,9 +23,7 @@ class Footer extends React.Component{
         const { classes } = this.props;
         return (
             <div className={classes.root}>
-                <Typography>
-                    Conoce más en <b><a href="https://www.gob.mx/sesna">gob.mx/sesna</a></b> o escribenos a: <b>correo / twitter</b>
-                </Typography>
+                <img src={SESNA} alt='SESNA' className={classes.logo}/>
             </div>
         )
     }

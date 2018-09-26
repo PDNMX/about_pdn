@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Header from './components/Header';
-//import Footer from './components/Footer';
+import Footer from './components/Footer';
 //import Typography from "@material-ui/core/Typography";
 import {withStyles} from '@material-ui/core/styles';
 import PropTypes from 'prop-types';
@@ -138,7 +138,7 @@ class App extends Component {
                     </Grid>
 
 
-                    {/*<Footer/>*/}
+                    <Footer/>
                 </div>
             </MuiThemeProvider>
         );
