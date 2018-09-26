@@ -6,12 +6,13 @@ import Paper from '@material-ui/core/Paper';
 
 const styles = theme => ({
     root: {},
-    paper : {
+    box : {
         padding: theme.spacing.unit * 2,
         marginTop: '20px',
         borderRadius: 0,
         borderColor: '#96cb99',
-        borderStyle: 'solid'
+        borderStyle: 'solid',
+        background: '#ffffff'
     },
     bullet: {
         backgroundColor: '#96cb99',
@@ -42,9 +43,9 @@ class Uso extends React.Component{
 
         return(
             <div>
-                <Typography variant="title" className={classes.greenText}>Conoce cómo se han usado los datos para combatir la corrupción en México:</Typography>
+                <Typography variant="title" className={classes.greenText}>Conoce cómo se han usado los datos para combatir la corrupción</Typography>
 
-                <div className={classes.paper}>
+                <div className={classes.box}>
                     <ul className={classes.ul}>
                         <li className={classes.li}>
                             <Typography><span className={classes.bullet}/> <b className={classes.greenText}>Aristegui Noticias</b> utilizó datos abiertos para investigas posibles casos de espionaje.</Typography>
