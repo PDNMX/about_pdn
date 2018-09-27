@@ -15,7 +15,10 @@ const styles = theme => ({
         alignItems: 'center',
         textAlign: 'center',
         backgroundImage: `url(${bgi})`,
-        minHeight: '360px'
+        minHeight: '360px',
+        //backgroundSize: '50%',
+        //backgroundPosition: 'bottom',
+        //backgroundRepeat: 'repeat'
     },
     pdn:{
         color: '#fff'

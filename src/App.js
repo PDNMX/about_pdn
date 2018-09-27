@@ -79,7 +79,7 @@ const styles = theme => ({
         color: theme.palette.text.secondary,
     },
     gridItem:{
-        maxWidth: 1024,
+        maxWidth: '1024px',
         marginTop: theme.spacing.unit * 3,
         marginBottom: theme.spacing.unit * 3,
         marginLeft: theme.spacing.unit,
@@ -141,9 +141,10 @@ class App extends Component {
                         </div>
                     </div>*/}
 
+
                     <Grid container justify="center" spacing={24}>
                         <Grid item xs={12} className={classes.gridItem}>
-                            <Carrusel/>
+                            {/*<Carrusel/>*/}
                         </Grid>
                     </Grid>
 
