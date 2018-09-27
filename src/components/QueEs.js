@@ -9,7 +9,7 @@ const styles = theme => ({
     mapita: {
         maxWidth: "70%"
     },
-    greenText: {
+    links: {
         color: '#96cb99'
     }
 });
@@ -36,13 +36,13 @@ class QueEs extends React.Component{
 
                         <Typography variant="subheading">
                             La <b>Plataforma Digital Nacional (PDN) </b> es una fuente de
-                            <b className={classes.greenText}> inteligencia anticorrupción</b> que creará impacto y generará valor para el gobierno y
+                            <b className={classes.links}> inteligencia anticorrupción</b> que creará impacto y generará valor para el gobierno y
                             la sociedad, a partir de los datos.
                         </Typography>
                         <br/>
                         <Typography variant="subheading">
                             La Plataforma hará que los datos anticorrupción del Gobierno Federal, Estados,
-                            Poderes y Órganos Autónomos sean comparables y utilizables, empezando con <b className={classes.greenText}>seis sistemas de datos prioritarios</b>.
+                            Poderes y Órganos Autónomos sean comparables y utilizables, empezando con <b className={classes.links}>seis sistemas de datos prioritarios</b>.
                         </Typography>
                     </Grid>
                 </Grid>

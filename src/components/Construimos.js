@@ -11,7 +11,7 @@ const styles = theme => ({
     root: {
         flexGrow: 1
     },
-    greenText: {
+    links: {
         color: '#96cb99'
     },
     whiteText: {
@@ -54,7 +54,7 @@ class Construimos extends React.Component{
         return (
             <div className={classes.root}>
 
-                <Typography variant="display2" className={classes.greenText}>
+                <Typography variant="display2" className={classes.links}>
                     Conoce cómo construimos la PDN
                 </Typography>
 

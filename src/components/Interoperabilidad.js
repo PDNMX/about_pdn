@@ -9,7 +9,7 @@ const styles = theme => ({
     root : {
         flexGrow: 1
     },
-    greenText: {
+    links: {
         color: '#96cb99'
     },
     whiteText: {
@@ -27,7 +27,7 @@ class Interoperabilidad extends React.Component{
         const {classes} = this.props;
         return (
             <div className={classes.root}>
-                <Typography variant='display2' className={classes.greenText}>
+                <Typography variant='display2' className={classes.links}>
                     PDN como Plataforma de Interoperabilidad
                 </Typography>
 
@@ -38,16 +38,16 @@ class Interoperabilidad extends React.Component{
 
                     <Grid item xs={6}>
                         <Typography className={classes.whiteText} variant="subheading">
-                            La <b className={classes.greenText}>PDN</b> permitirá que los datos de cada sector,
+                            La <b className={classes.links}>PDN</b> permitirá que los datos de cada sector,
                             generados y administrados por las instituciones de
                             los tres poderes de gobierno y organismos
-                            <b className={classes.greenText}> autónomos, estén estandarizados y sean interoperables</b>.
+                            <b className={classes.links}> autónomos, estén estandarizados y sean interoperables</b>.
                         </Typography>
                     </Grid>
 
                     <Grid item xs={6}>
                         <Typography className={classes.whiteText} variant="subheading">
-                            La <b className={classes.greenText}>PDN</b> será el lugar que provocará la <b className={classes.greenText}>interoperabilidad,
+                            La <b className={classes.links}>PDN</b> será el lugar que provocará la <b className={classes.links}>interoperabilidad,
                             consulta y uso</b> de estos datos para toda la ciudadanía.
                         </Typography>
 

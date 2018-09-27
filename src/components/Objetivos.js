@@ -23,7 +23,7 @@ const styles = theme => ({
     li: {
       paddingBottom: theme.spacing.unit *2
     },
-    greenText: {
+    links: {
         color: '#96cb99'
     }
 });
@@ -35,13 +35,13 @@ class Objetivos extends React.Component{
 
         return (
             <div>
-                <Typography variant="display2" className={classes.greenText}>
+                <Typography variant="display2" className={classes.links}>
                     ¿Cuáles son sus objetivos?
                 </Typography>
                 <br/>
                 <br/>
                 <Typography variant="subheading">
-                    Usar <b className={classes.greenText}>nuevas tecnologías</b>, <b className={classes.greenText}>metodologías de trabajo</b>, <b className={classes.greenText}>ciencia de datos</b> e <b className={classes.greenText}>inteligencia artificial</b> como insumos y
+                    Usar <b className={classes.links}>nuevas tecnologías</b>, <b className={classes.links}>metodologías de trabajo</b>, <b className={classes.links}>ciencia de datos</b> e <b className={classes.links}>inteligencia artificial</b> como insumos y
                     apoyo al trabajo de las autoridades del <b>Sistema Nacional Anticorrupción</b> para:
                 </Typography>
                 <br/>

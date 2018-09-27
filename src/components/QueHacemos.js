@@ -16,7 +16,7 @@ const styles = theme => ({
     itemCentered:{
         textAlign: 'center'
     },
-    greenText: {
+    links: {
         color: '#96cb99'
     },
     whiteText: {
@@ -48,7 +48,7 @@ class QueHacemos extends React.Component{
             <div>
 
 
-                <Typography variant="title" className={classes.greenText}>
+                <Typography variant="title" className={classes.links}>
                     Conoce lo que estamos haciendo para construir la plataforma
                 </Typography>
 
@@ -63,18 +63,18 @@ class QueHacemos extends React.Component{
 
                     <Grid item xs={6}>
                         <Typography className={classes.whiteText}>
-                            La PDN permitirá que las base de datos de los sistemas <b className={classes.greenText}>estén estandarizadas y sean interoperables.</b>
+                            La PDN permitirá que las base de datos de los sistemas <b className={classes.links}>estén estandarizadas y sean interoperables.</b>
                         </Typography>
                             <br/>
                         <Typography className={classes.whiteText}>
-                            El objetivo es contar con <b className={classes.greenText}>datos de calidad</b>, para apoyar esfuerzos existentes y detonar nuevos mecanismos
-                            inteligentes, eficientes y eficaces para combatir la corrupción, de manera <b className={classes.greenText}>multidisciplinaria, colaborativa y multisectorial.</b>
+                            El objetivo es contar con <b className={classes.links}>datos de calidad</b>, para apoyar esfuerzos existentes y detonar nuevos mecanismos
+                            inteligentes, eficientes y eficaces para combatir la corrupción, de manera <b className={classes.links}>multidisciplinaria, colaborativa y multisectorial.</b>
                         </Typography>
                     </Grid>
 
                     <Grid item xs={6}>
                         <Typography  className={classes.whiteText}>
-                            Trabajamos en <b className={classes.greenText}>cinco ejes</b> clave para desarrollar y fomentar el uso de la Plataforma
+                            Trabajamos en <b className={classes.links}>cinco ejes</b> clave para desarrollar y fomentar el uso de la Plataforma
                         </Typography>
 
                         <br/>
