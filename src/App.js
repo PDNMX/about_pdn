@@ -4,15 +4,15 @@ import Footer from './components/Footer';
 //import Typography from "@material-ui/core/Typography";
 import {withStyles} from '@material-ui/core/styles';
 import PropTypes from 'prop-types';
-
 import QueEs from './components/QueEs';
 import Sectores from './components/Sectores';
-import QueHacemos from './components/QueHacemos';
+//import QueHacemos from './components/QueHacemos';
 //import QueSigue from './components/QueSigue';
 import Objetivos from './components/Objetivos';
 import Carrusel from './components/Carrusel';
 import Uso from './components/Uso';
 import Interoperabilidad from './components/Interoperabilidad';
+import Construimos from './components/Construimos';
 import Grid from '@material-ui/core/Grid';
 
 import {createMuiTheme, MuiThemeProvider } from '@material-ui/core/styles';
@@ -114,15 +114,24 @@ class App extends Component {
                         </Grid>
                     </Grid>
 
+                    {/*
                     <Grid container spacing={24} justify="center" style={{background: '#37464f'}}>
                         <Grid item xs={12} className={classes.gridItem}>
                             <QueHacemos/>
                         </Grid>
                     </Grid>
+                    */}
 
                     <Grid container spacing={24} justify='center' style={{background: '#37464f'}}>
                         <Grid item xs={12} className ={classes.gridItem}>
                             <Interoperabilidad/>
+                        </Grid>
+                    </Grid>
+
+
+                    <Grid container spacing={24} justify='center'>
+                        <Grid item xs={12} className={classes.gridItem}>
+                            <Construimos/>
                         </Grid>
                     </Grid>
 
