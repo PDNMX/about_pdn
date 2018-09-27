@@ -63,6 +63,16 @@ class Objetivos extends React.Component{
                         <Typography><span className={classes.bullet}/> <b>Apoyar la participación ciudadana</b>, poniendo al ciudadano al centro del combate a la corrupción
                         </Typography>
                     </li>
+
+                    <li className={classes.li}>
+                        <Typography> <span className={classes.bullet}/> <b> Incorporar información sobre indicadores</b> para evaluar la Política Nacional Anticorrupción y el fenómeno en México</Typography>
+
+                    </li>
+                    <li className={classes.li}>
+                        <Typography>
+                            <span className={classes.bullet}/> <b> Dar evidencia para generar recomendaciones de politica pública</b> a las autoridades del Sistema Nacional Anticorrupción
+                        </Typography>
+                    </li>
                 </ul>
             </div>
         );
