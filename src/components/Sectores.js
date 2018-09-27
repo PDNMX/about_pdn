@@ -27,6 +27,9 @@ const styles = theme => ({
         height: '55px',
         width: '55px',
         borderRadius: '50%'
+    },
+    links:{
+        color: '#96cb99'
     }
 
 });
@@ -49,37 +52,38 @@ class Sectores extends React.Component {
 
                     <Grid item xs={4} className={ classes.item }>
                         <img className={classes.icons} src={s1} alt="Sistema 1"/>
-                        <Typography variant="subheading">Declaraciones
+                        <Typography variant="subheading">
+                            <a href="" className={classes.links}> Declaraciones</a>
                         </Typography>
                     </Grid>
                     <Grid item xs={4} className={classes.item}>
                         <img className={classes.icons} src={s2} alt="Sistema 2"/>
                         <Typography variant="subheading">
-                            Servidores públicos que intervienen en contrataciones
+                            <a href="" className={classes.links}>Servidores públicos que intervienen en contrataciones</a>
                         </Typography>
                     </Grid>
                     <Grid item xs={4} className = {classes.item}>
                         <img className={classes.icons} src={s3} alt="Sistema 3"/>
                         <Typography variant="subheading">
-                            Servidores públicos y particulares sancionados
+                            <a href="" className={classes.links}>Servidores públicos y particulares sancionados</a>
                         </Typography>
                     </Grid>
                     <Grid item xs={4} className = {classes.item }>
                         <img className={classes.icons} src={s4} alt="Sistema 4"/>
                         <Typography variant="subheading">
-                            Fiscalización
+                            <a href="" className={classes.links}> Fiscalización</a>
                         </Typography>
                     </Grid>
                     <Grid item xs={4} className={classes.item}>
                         <img className={classes.icons} src={s5} alt="Sistema 5"/>
                         <Typography variant="subheading">
-                            Denuncias
+                            <a href="" className={classes.links}> Denuncias</a>
                         </Typography>
                     </Grid>
                     <Grid item xs={4} className={classes.item }>
                         <img className={classes.icons} src={s6} alt="Sistema 6"/>
                         <Typography variant="subheading">
-                            Contrataciones Públicas
+                            <a href="" className={classes.links}> Contrataciones Públicas </a>
                         </Typography>
                     </Grid>
 
