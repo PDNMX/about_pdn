@@ -20,7 +20,8 @@ const styles = theme => ({
     titles: {
         background: '#96cb99',
         color: '#ffffff',
-        textAlign: 'center'
+        textAlign: 'center',
+        padding: theme.spacing.unit* .5
     },
     bullet: {
         backgroundColor: '#96cb99',
@@ -41,7 +42,7 @@ const styles = theme => ({
     },
     ejes: {
         padding: theme.spacing.unit,
-        maxWidth: '270px'
+        maxWidth: '350px'
     }
 });
 
