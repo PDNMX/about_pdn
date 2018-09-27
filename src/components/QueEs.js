@@ -25,6 +25,7 @@ class QueEs extends React.Component{
                 <Typography style={{color:'#96cb99'}} variant="display2">¿Qué es la Plataforma Digital Nacional?</Typography>
 
                 <br/>
+                <br/>
 
                 <Grid container spacing={24}>
                     <Grid item xs={6}>
