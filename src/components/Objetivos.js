@@ -35,7 +35,7 @@ class Objetivos extends React.Component{
 
         return (
             <div>
-                <Typography variant="title" className={classes.greenText}>
+                <Typography variant="display2" className={classes.greenText}>
                     ¿Cuáles son sus objetivos?
                 </Typography>
                 <br/>

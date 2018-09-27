@@ -53,7 +53,7 @@ class Construimos extends React.Component{
         return (
             <div className={classes.root}>
 
-                <Typography variant="title" className={classes.greenText}>
+                <Typography variant="display2" className={classes.greenText}>
                     Conoce cómo construimos la PDN
                 </Typography>
 

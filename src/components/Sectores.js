@@ -40,7 +40,7 @@ class Sectores extends React.Component {
             <div>
                 <Grid container spacing={24}>
                     <Grid item xs={12}>
-                        <Typography variant='title' style={{color: '#96cb99'}}>
+                        <Typography variant='display2' style={{color: '#96cb99'}}>
                             {/*<Chip label={6} className={classes.chip}/>*/} Sistemas de la PDN
                         </Typography>
                     </Grid>

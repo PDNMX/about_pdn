@@ -43,7 +43,7 @@ class Uso extends React.Component{
 
         return(
             <div>
-                <Typography variant="title" className={classes.greenText}>Conoce cómo se usan los datos para combatir la corrupción</Typography>
+                <Typography variant="display2" className={classes.greenText}>Conoce cómo se usan los datos para combatir la corrupción</Typography>
 
                 <div className={classes.box}>
                     <ul className={classes.ul}>

@@ -27,7 +27,7 @@ class Interoperabilidad extends React.Component{
         const {classes} = this.props;
         return (
             <div className={classes.root}>
-                <Typography variant='title' className={classes.greenText}>
+                <Typography variant='display2' className={classes.greenText}>
                     PDN como Plataforma de Interoperabilidad
                 </Typography>
 
