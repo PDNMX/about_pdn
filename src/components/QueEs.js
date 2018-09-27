@@ -5,7 +5,6 @@ import mapita from '../assets/mapa.svg';
 import Grid from '@material-ui/core/Grid';
 const styles = theme => ({
     root : {
-
     },
     mapita: {
         maxWidth: "70%"
@@ -21,7 +20,7 @@ class QueEs extends React.Component{
         const { classes } = this.props;
 
         return (
-            <div>
+            <div className={classes.root}>
 
                 <Typography style={{color:'#96cb99'}} variant="title">¿Qué es la Plataforma Digital Nacional</Typography>
 

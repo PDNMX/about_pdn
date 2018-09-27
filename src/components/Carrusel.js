@@ -1,72 +1,100 @@
 import React from 'react';
-import {withStyles} from '@material-ui/core/styles';
-
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
-
+import PropTypes from 'prop-types';
+import { withStyles } from '@material-ui/core/styles';
+import GridList from '@material-ui/core/GridList';
+import GridListTile from '@material-ui/core/GridListTile';
+import GridListTileBar from '@material-ui/core/GridListTileBar';
+import IconButton from '@material-ui/core/IconButton';
+import StarBorderIcon from '@material-ui/icons/StarBorder';
+import Logo from '../assets/logo-PDN.svg';
+const tileData = [
+    {
+        img: Logo,
+        title: 'Infografía 1',
+        author: 'jill111',
+        featured: true,
+    },
+    {
+        img: Logo,
+        title: 'Infografía 2',
+        author: 'director90',
+    },
+    {
+        img: Logo,
+        title: 'Infografía 3',
+        author: 'Danson67',
+    },
+];
 
 const styles = theme => ({
-    root : {}
+    root: {
+        display: 'flex',
+        flexWrap: 'wrap',
+        justifyContent: 'space-around',
+        overflow: 'hidden',
+        backgroundColor: theme.palette.background.paper,
+    },
+    gridList: {
+        flexWrap: 'nowrap',
+        // Promote the list into his own layer on Chrome. This cost memory but helps keeping high FPS.
+        transform: 'translateZ(0)',
+    },
+    title: {
+        color: theme.palette.primary.light,
+    },
+    titleBar: {
+        background:
+            'linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 70%, rgba(0,0,0,0) 100%)',
+    },
 });
 
-class Carrusel extends React.Component{
+/**
+ * The example data is structured as follows:
+ *
+ * import image from 'path/to/image.jpg';
+ * [etc...]
+ *
+ * const tileData = [
+ *   {
+ *     img: image,
+ *     title: 'Image',
+ *     author: 'author',
+ *   },
+ *   {
+ *     [etc...]
+ *   },
+ * ];
+ */
+function SingleLineGridList(props) {
+    const { classes } = props;
 
-
-    render() {
-        const  settings = {
-            dots: true,
-            infinite: false,
-            speed: 500,
-            slidesToShow: 1,
-            slidesToScroll: 3,
-            initialSlide: 0,
-            variableWidth: true,
-            responsive: [
-                {
-                    breakpoint: 1024,
-                    settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 3,
-                        infinite: true,
-                        dots: true
-                    }
-                },
-                {
-                    breakpoint: 600,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 2,
-                        initialSlide: 2
-                    }
-                },
-                {
-                    breakpoint: 480,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1
-                    }
-                }
-            ]
-        };
-        return (
-            <div>
-                <h2> Responsive </h2>
-                <Slider {...settings}>
-                    <div style={{width: 100}}>
-                        <h3>1</h3>
-                    </div>
-                    <div style={{ width: 100 }}>
-                        <h3>2</h3>
-                    </div>
-                    <div style={{ width: 100 }}>
-                        <h3>3</h3>
-                    </div>
-                </Slider>
-            </div>
-        );
-    }
-
+    return (
+        <div className={classes.root}>
+            <GridList className={classes.gridList} cols={1}>
+                {tileData.map((tile, i) => (
+                    <GridListTile key={i}>
+                        <img src={tile.img} alt={tile.title} />
+                        <GridListTileBar
+                            title={tile.title}
+                            classes={{
+                                root: classes.titleBar,
+                                title: classes.title,
+                            }}
+                            actionIcon={
+                                <IconButton>
+                                    <StarBorderIcon className={classes.title} />
+                                </IconButton>
+                            }
+                        />
+                    </GridListTile>
+                ))}
+            </GridList>
+        </div>
+    );
 }
 
-export default withStyles(styles)(Carrusel);
+SingleLineGridList.propTypes = {
+    classes: PropTypes.object.isRequired,
+};
+
+export default withStyles(styles)(SingleLineGridList);

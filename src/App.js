@@ -96,6 +96,7 @@ class App extends Component {
             <MuiThemeProvider theme ={theme}>
                 <div className={classes.root}>
                     <Header/>
+
                     <Grid container spacing={24} justify="center">
                         <Grid item xs={12} className={classes.gridItem}>
                             <QueEs/>
@@ -144,9 +145,10 @@ class App extends Component {
 
                     <Grid container justify="center" spacing={24}>
                         <Grid item xs={12} className={classes.gridItem}>
-                            {/*<Carrusel/>*/}
+                            <Carrusel/>
                         </Grid>
                     </Grid>
+
 
                     <Grid container justify="center" spacing={24} style={{background: '#f9f9f9'}}>
                         <Grid item xs={12} className={classes.gridItem}>

@@ -19,6 +19,8 @@ const styles = theme => ({
         //backgroundSize: '50%',
         //backgroundPosition: 'bottom',
         //backgroundRepeat: 'repeat'
+
+        flexGrow:1
     },
     pdn:{
         color: '#fff'
