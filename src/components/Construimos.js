@@ -17,6 +17,11 @@ const styles = theme => ({
     whiteText: {
         color: '#e6e6e6'
     },
+    titles: {
+        background: '#96cb99',
+        color: '#ffffff',
+        textAlign: 'center'
+    },
     bullet: {
         backgroundColor: '#96cb99',
         height: '12px',
@@ -33,6 +38,10 @@ const styles = theme => ({
     },
     li: {
         paddingBottom: theme.spacing.unit *2
+    },
+    ejes: {
+        padding: theme.spacing.unit,
+        maxWidth: '270px'
     }
 });
 
@@ -43,13 +52,16 @@ class Construimos extends React.Component{
 
         return (
             <div className={classes.root}>
-                <Typography variant="title">
+
+                <Typography variant="title" className={classes.greenText}>
                     Conoce cómo construimos la PDN
                 </Typography>
 
+                <br/>
+                <br/>
                 <Grid container spacing={24}>
                     <Grid item xs={6}>
-                        <Typography variant="subheading">Principios</Typography>
+                        <Typography variant="title" className={classes.titles }>Principios</Typography>
                         <ul className={classes.ul}>
                             <li className={classes.li}><Typography> <span className={classes.bullet}/> Diseño centrado en las usuarias-os y sus necesidades</Typography></li>
                             <li className={classes.li}><Typography> <span className={classes.bullet}/> Construcción gradual, modular, escalable, ágil y flexible</Typography></li>
@@ -58,10 +70,10 @@ class Construimos extends React.Component{
                             <li className={classes.li}><Typography> <span className={classes.bullet}/> Creación de impacto y entrega de valor público en el centro</Typography></li>
                         </ul>
                     </Grid>
-                    <Grid item xs={6}>
-                        <Typography variant="subheading">Ejes de trabajo</Typography>
+                    <Grid item xs={6} style={{textAlign: 'center'}} >
+                        <Typography variant="title" className={classes.titles}>Ejes de trabajo</Typography>
 
-                        <img src={Ejes} alt="Ejes"/>
+                        <img className={classes.ejes} src={Ejes} alt="Ejes"/>
                     </Grid>
                 </Grid>
             </div>
