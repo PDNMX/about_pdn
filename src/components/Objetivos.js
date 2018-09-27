@@ -39,37 +39,37 @@ class Objetivos extends React.Component{
                     ¿Cuáles son sus objetivos?
                 </Typography>
                 <br/>
-                <Typography>
+                <Typography variant="subheading">
                     Usar <b className={classes.greenText}>nuevas tecnologías</b>, <b className={classes.greenText}>metodologías de trabajo</b>, <b className={classes.greenText}>ciencia de datos</b> e <b className={classes.greenText}>inteligencia artificial</b> como insumos y
                     apoyo al trabajo de las autoridades del <b>Sistema Nacional Anticorrupción</b> para:
                 </Typography>
                 <br/>
                 <ul className={classes.ul}>
                     <li className={classes.li}>
-                        <Typography><span className={classes.bullet}/> <b>Analizar, predecir y alertar</b> a las autoridades sobre posibles riesgos de corrupción</Typography>
+                        <Typography variant="subheading"><span className={classes.bullet}/> <b>Analizar, predecir y alertar</b> a las autoridades sobre posibles riesgos de corrupción</Typography>
                     </li>
                     <li className={classes.li}>
-                        <Typography><span className={classes.bullet}/> <b>Automatizar procesos, evitar discrecionalidad, colusión y conflicto de interés</b></Typography>
+                        <Typography variant="subheading"><span className={classes.bullet}/> <b>Automatizar procesos, evitar discrecionalidad, colusión y conflicto de interés</b></Typography>
                     </li>
                     <li className={classes.li}>
-                        <Typography><span className={classes.bullet}/> <b>Promover el uso de los datos</b> para respaldar procesos de sanción y como evidencia combatir la impunidad</Typography>
+                        <Typography variant="subheading"><span className={classes.bullet}/> <b>Promover el uso de los datos</b> para respaldar procesos de sanción y como evidencia combatir la impunidad</Typography>
                     </li>
                     <li className={classes.li}>
-                        <Typography><span className={classes.bullet}/> <b>Dar seguimiento, en tiempo real</b>, a los procesos y proyectos de contratación pública, asegurar el cumplimiento de sus objetivos
+                        <Typography variant="subheading"><span className={classes.bullet}/> <b>Dar seguimiento, en tiempo real</b>, a los procesos y proyectos de contratación pública, asegurar el cumplimiento de sus objetivos
                             y garantizar una mayor eficiencia en las compras públicas
                         </Typography>
                     </li>
                     <li className={classes.li}>
-                        <Typography><span className={classes.bullet}/> <b>Apoyar la participación ciudadana</b>, poniendo al ciudadano al centro del combate a la corrupción
+                        <Typography variant="subheading"><span className={classes.bullet}/> <b>Apoyar la participación ciudadana</b>, poniendo al ciudadano al centro del combate a la corrupción
                         </Typography>
                     </li>
 
                     <li className={classes.li}>
-                        <Typography> <span className={classes.bullet}/> <b> Incorporar información sobre indicadores</b> para evaluar la Política Nacional Anticorrupción y el fenómeno en México</Typography>
+                        <Typography variant="subheading"> <span className={classes.bullet}/> <b> Incorporar información sobre indicadores</b> para evaluar la Política Nacional Anticorrupción y el fenómeno en México</Typography>
 
                     </li>
                     <li className={classes.li}>
-                        <Typography>
+                        <Typography variant="subheading">
                             <span className={classes.bullet}/> <b> Dar evidencia para generar recomendaciones de politica pública</b> a las autoridades del Sistema Nacional Anticorrupción
                         </Typography>
                     </li>

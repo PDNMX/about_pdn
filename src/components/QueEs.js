@@ -33,13 +33,13 @@ class QueEs extends React.Component{
 
                     <Grid item xs={6}>
 
-                        <Typography>
+                        <Typography variant="subheading">
                             La <b>Plataforma Digital Nacional (PDN) </b> es una fuente de
                             <b className={classes.greenText}> inteligencia anticorrupción</b> que creará impacto y generará valor para el gobierno y
                             la sociedad, a partir de los datos.
                         </Typography>
                         <br/>
-                        <Typography>
+                        <Typography variant="subheading">
                             La Plataforma hará que los datos anticorrupción del Gobierno Federal, Estados,
                             Poderes y Órganos Autónomos sean comparables y utilizables, empezando con <b className={classes.greenText}>seis sistemas de datos prioritarios</b>.
                         </Typography>

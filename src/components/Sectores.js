@@ -47,36 +47,36 @@ class Sectores extends React.Component {
 
                     <Grid item xs={4} className={ classes.item }>
                         <img className={classes.icons} src={s1} alt="Sistema 1"/>
-                        <Typography>Declaraciones
+                        <Typography variant="subheading">Declaraciones
                         </Typography>
                     </Grid>
                     <Grid item xs={4} className={classes.item}>
                         <img className={classes.icons} src={s2} alt="Sistema 2"/>
-                        <Typography>
+                        <Typography variant="subheading">
                             Servidores públicos que intervienen en contrataciones
                         </Typography>
                     </Grid>
                     <Grid item xs={4} className = {classes.item}>
                         <img className={classes.icons} src={s3} alt="Sistema 3"/>
-                        <Typography>
+                        <Typography variant="subheading">
                             Servidores públicos y particulares sancionados
                         </Typography>
                     </Grid>
                     <Grid item xs={4} className = {classes.item }>
                         <img className={classes.icons} src={s4} alt="Sistema 4"/>
-                        <Typography>
+                        <Typography variant="subheading">
                             Fiscalización
                         </Typography>
                     </Grid>
                     <Grid item xs={4} className={classes.item}>
                         <img className={classes.icons} src={s5} alt="Sistema 5"/>
-                        <Typography>
+                        <Typography variant="subheading">
                             Denuncias
                         </Typography>
                     </Grid>
                     <Grid item xs={4} className={classes.item }>
                         <img className={classes.icons} src={s6} alt="Sistema 6"/>
-                        <Typography>
+                        <Typography variant="subheading">
                             Contrataciones Públicas
                         </Typography>
                     </Grid>
