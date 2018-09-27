@@ -7,9 +7,10 @@ import GridListTileBar from '@material-ui/core/GridListTileBar';
 import IconButton from '@material-ui/core/IconButton';
 import StarBorderIcon from '@material-ui/icons/StarBorder';
 import Logo from '../assets/logo-PDN.svg';
+import C1 from '../assets/banner1.png';
 const tileData = [
     {
-        img: Logo,
+        img: C1,
         title: 'Infografía 1',
         author: 'jill111',
         featured: true,
