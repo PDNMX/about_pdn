@@ -12,6 +12,7 @@ import QueHacemos from './components/QueHacemos';
 import Objetivos from './components/Objetivos';
 import Carrusel from './components/Carrusel';
 import Uso from './components/Uso';
+import Interoperabilidad from './components/Interoperabilidad';
 import Grid from '@material-ui/core/Grid';
 
 import {createMuiTheme, MuiThemeProvider } from '@material-ui/core/styles';
@@ -116,6 +117,12 @@ class App extends Component {
                     <Grid container spacing={24} justify="center" style={{background: '#37464f'}}>
                         <Grid item xs={12} className={classes.gridItem}>
                             <QueHacemos/>
+                        </Grid>
+                    </Grid>
+
+                    <Grid container spacing={24} justify='center' style={{background: '#37464f'}}>
+                        <Grid item xs={12} className ={classes.gridItem}>
+                            <Interoperabilidad/>
                         </Grid>
                     </Grid>
 
