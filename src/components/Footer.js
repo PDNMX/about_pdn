@@ -35,7 +35,7 @@ class Footer extends React.Component{
                     <Grid item md={4} xs={12} align="right">
                         <Typography variant="subheading">
                             <a href="" className={classes.links}>
-                            Términos de referencia
+                            Términos de uso
                             </a>
                         </Typography>
                     </Grid>
