@@ -35,7 +35,7 @@ const styles = theme => ({
     ul: {
         listStyle: 'none',
         //marginLeft: 0,
-        paddingLeft: '20px'
+        paddingLeft: '0px'
     },
     li: {
         paddingBottom: theme.spacing.unit *2
@@ -64,11 +64,11 @@ class Construimos extends React.Component{
                     <Grid item xs={6}>
                         <Typography variant="title" className={classes.titles }>Principios</Typography>
                         <ul className={classes.ul}>
-                            <li className={classes.li}><Typography variant="subheading"> <span className={classes.bullet}/> Diseño centrado en las usuarias-os y sus necesidades</Typography></li>
-                            <li className={classes.li}><Typography variant="subheading"> <span className={classes.bullet}/> Construcción gradual, modular, escalable, ágil y flexible</Typography></li>
-                            <li className={classes.li}><Typography variant="subheading"> <span className={classes.bullet}/> Datos interoperables y abiertos</Typography></li>
-                            <li className={classes.li}><Typography variant="subheading"> <span className={classes.bullet}/> Seguridad de la información y protección de datos personales</Typography></li>
-                            <li className={classes.li}><Typography variant="subheading"> <span className={classes.bullet}/> Creación de impacto y entrega de valor público en el centro</Typography></li>
+                            <li className={classes.li}><Typography variant="subheading"> 1.{/*<span className={classes.bullet}/>*/} Diseño centrado en las usuarias-os y sus necesidades</Typography></li>
+                            <li className={classes.li}><Typography variant="subheading"> 2.{/*<span className={classes.bullet}/>*/} Construcción gradual, modular, escalable, ágil y flexible</Typography></li>
+                            <li className={classes.li}><Typography variant="subheading"> 3.{/*<span className={classes.bullet}/>*/} Datos interoperables y abiertos</Typography></li>
+                            <li className={classes.li}><Typography variant="subheading"> 4.{/*<span className={classes.bullet}/>*/} Seguridad de la información y protección de datos personales</Typography></li>
+                            <li className={classes.li}><Typography variant="subheading"> 5.{/*<span className={classes.bullet}/>*/} Creación de impacto y entrega de valor público en el centro</Typography></li>
                         </ul>
                     </Grid>
                     <Grid item xs={6} style={{textAlign: 'center'}} >
