@@ -13,18 +13,18 @@ import C3 from '../assets/banner3.png';
 const tileData = [
     {
         img: C1,
-        title: 'Infografía 1',
+        //title: 'Infografía 1',
         author: 'jill111',
         featured: true,
     },
     {
         img: C2,
-        title: 'Infografía 2',
+        //title: 'Infografía 2',
         author: 'director90',
     },
     {
         img: C3,
-        title: 'Infografía 3',
+        //title: 'Infografía 3',
         author: 'Danson67',
     },
 ];
