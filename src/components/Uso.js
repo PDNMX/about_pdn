@@ -50,16 +50,16 @@ class Uso extends React.Component{
                 <div className={classes.box}>
                     <ul className={classes.ul}>
                         <li className={classes.li}>
-                            <Typography variant="subheading"><span className={classes.bullet}/> <a href="" className={classes.links}>Aristegui Noticias</a> utilizó datos abiertos para investigas posibles casos de espionaje.</Typography>
+                            <Typography variant="subheading"><span className={classes.bullet}/> <a href="https://aristeguinoticias.com/1007/mexico/pgr-cisen-y-sedena-gastaron-casi-500-millones-en-actualizar-pegasus-documentos/" className={classes.links}>Aristegui Noticias</a> utilizó datos abiertos para investigas posibles casos de espionaje.</Typography>
                         </li>
                         <li className={classes.li}>
-                            <Typography variant="subheading"><span className={classes.bullet}/> <a href="" className={classes.links}>Imco y OPI</a> utilizaron datos de contrataciones para identificar riesgos e impulsar una cultura de prevención en contrataciones.</Typography>
+                            <Typography variant="subheading"><span className={classes.bullet}/> <a href="https://imco.org.mx/articulo_es/indice-riesgos-corrupcion-sistema-mexicano-contrataciones-publicas/" className={classes.links}>Imco y OPI</a> utilizaron datos de contrataciones para identificar riesgos e impulsar una cultura de prevención en contrataciones.</Typography>
                         </li>
                         <li className={classes.li}>
-                            <Typography variant="subheading"><span className={classes.bullet}/> <a href="" className={classes.links}>Data Cívica</a> utilizó datos abiertos para reconstruir las declaraciones patrimoniales de servidores públicos del gobierno.</Typography>
+                            <Typography variant="subheading"><span className={classes.bullet}/> <a href="https://1560000.org/explora" className={classes.links}>Data Cívica</a> utilizó datos abiertos para reconstruir las declaraciones patrimoniales de servidores públicos del gobierno.</Typography>
                         </li>
                         <li className={classes.li}>
-                            <Typography variant="subheading"><span className={classes.bullet}/> <a href="" className={classes.links}>Animal Político</a> utilizó datos de auditorías y licitaciones para detectar desvíos de recursos, algo que ha sido utilizado como insumo
+                            <Typography variant="subheading"><span className={classes.bullet}/> <a href="https://www.animalpolitico.com/estafa-maestra/#datos" className={classes.links}>Animal Político</a> utilizó datos de auditorías y licitaciones para detectar desvíos de recursos, algo que ha sido utilizado como insumo
                                 en el proceso para sancionar a posibles involucrados.</Typography>
                         </li>
                     </ul>
