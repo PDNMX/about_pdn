@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 
-import SESNA from '../assets/LogotipoSESNA-01.png';
+import SESNA from '../assets/sesna-gris.jpg';
 
 const styles  = theme => ({
     root: {
@@ -34,9 +34,9 @@ class Footer extends React.Component{
                     </Grid>
                     <Grid item md={4} xs={12} align="right">
                         <Typography variant="subheading">
-                            <a href="" className={classes.links}>
+                            {/*<a href="" className={classes.links}>
                             Términos de uso
-                            </a>
+                            </a>*/}
                         </Typography>
                     </Grid>
                 </Grid>
