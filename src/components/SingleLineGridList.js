@@ -73,7 +73,7 @@ function SingleLineGridList(props) {
 
     return (
         <div className={classes.root}>
-            <GridList cellHeight='100%' className={classes.gridList} cols={1}>
+            <GridList cellHeight='auto' className={classes.gridList} cols={1}>
                 {tileData.map((tile, i) => (
                     <GridListTile key={i}>
                         <img src={tile.img} alt={tile.title}/>

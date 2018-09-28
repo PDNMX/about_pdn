@@ -10,7 +10,7 @@ const styles = theme => ({
     },
     title: {
         color: '#96cb99'
-    }
+    },
 });
 class Carrusel extends React.Component{
 
