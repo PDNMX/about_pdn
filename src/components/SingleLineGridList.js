@@ -14,18 +14,18 @@ const tileData = [
     {
         img: C1,
         //title: 'Infografía 1',
-        author: 'jill111',
+        author: 'PDN',
         featured: true,
     },
     {
         img: C2,
         //title: 'Infografía 2',
-        author: 'director90',
+        author: 'PDN',
     },
     {
         img: C3,
         //title: 'Infografía 3',
-        author: 'Danson67',
+        author: 'PDN',
     },
 ];
 
@@ -73,10 +73,10 @@ function SingleLineGridList(props) {
 
     return (
         <div className={classes.root}>
-            <GridList className={classes.gridList} cols={1}>
+            <GridList cellHeight='100%' className={classes.gridList} cols={1}>
                 {tileData.map((tile, i) => (
                     <GridListTile key={i}>
-                        <img src={tile.img} alt={tile.title} />
+                        <img src={tile.img} alt={tile.title}/>
                         <GridListTileBar
                             title={tile.title}
                             classes={{
