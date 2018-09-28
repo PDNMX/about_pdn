@@ -64,7 +64,7 @@ class Construimos extends React.Component{
                 <br/>
                 <br/>
                 <Grid container spacing={24}>
-                    <Grid item xs={6}>
+                    <Grid item xs={12} md={6}>
                         <Typography variant="title" className={classes.titles }>Principios</Typography>
                         <ul className={classes.ul}>
                             <li className={classes.li}><Typography variant="subheading"> <b className={classes.numbering}>1.</b>{/*<span className={classes.bullet}/>*/} Diseño centrado en las usuarias-os y sus necesidades</Typography></li>
@@ -74,7 +74,7 @@ class Construimos extends React.Component{
                             <li className={classes.li}><Typography variant="subheading"> <b className={classes.numbering}>5.</b>{/*<span className={classes.bullet}/>*/} Creación de impacto y entrega de valor público en el centro</Typography></li>
                         </ul>
                     </Grid>
-                    <Grid item xs={6} style={{textAlign: 'center'}} >
+                    <Grid item xs={12} md={6} style={{textAlign: 'center'}} >
                         <Typography variant="title" className={classes.titles}>Ejes de trabajo</Typography>
 
                         <img className={classes.ejes} src={Ejes} alt="Ejes"/>

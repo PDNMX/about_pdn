@@ -28,11 +28,11 @@ class QueEs extends React.Component{
                 <br/>
 
                 <Grid container spacing={24}>
-                    <Grid item xs={6}>
+                    <Grid item xs={12} md={6}>
                         <img src={mapita} alt="Mapita" className={classes.mapita}/>
                     </Grid>
 
-                    <Grid item xs={6}>
+                    <Grid item xs={12} md={6}>
 
                         <Typography variant="subheading">
                             Es una fuente de

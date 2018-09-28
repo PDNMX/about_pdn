@@ -54,7 +54,7 @@ class Sectores extends React.Component {
                         <br/>
                     </Grid>
 
-                    <Grid item xs={4} className={ classes.item }>
+                    <Grid item xs={6} md={4} className={ classes.item }>
                         <a href="https://www.plataformadigitalnacional.org/blog/sistema-1-declaracion-patrimonial-declaracion-de-intereses-y-constancia-de-presentacion-de-declaracion-fiscal/" className={classes.links}>
                             <img className={classes.icons} src={s1} alt="Sistema 1"/>
                             <Typography variant="subheading" className={classes.links}>
@@ -62,7 +62,7 @@ class Sectores extends React.Component {
                             </Typography>
                         </a>
                     </Grid>
-                    <Grid item xs={4} className={classes.item}>
+                    <Grid item  xs={6} md={4} className={classes.item}>
                         <a href="https://www.plataformadigitalnacional.org/blog/sistema-2-servidores-publicos-que-intervienen-en-procesos-de-contrataciones-publicas/" className={classes.links}>
                             <img className={classes.icons} src={s2} alt="Sistema 2"/>
                             <Typography variant="subheading" className={classes.links}>
@@ -70,7 +70,7 @@ class Sectores extends React.Component {
                             </Typography>
                         </a>
                     </Grid>
-                    <Grid item xs={4} className = {classes.item}>
+                    <Grid item  xs={6} md={4} className = {classes.item}>
                         <a href="https://www.plataformadigitalnacional.org/blog/sistema-3-servidores-publicos-y-particulares-sancionados/" className={classes.links}>
                             <img className={classes.icons} src={s3} alt="Sistema 3"/>
                             <Typography variant="subheading" className={classes.links}>
@@ -78,7 +78,7 @@ class Sectores extends React.Component {
                             </Typography>
                         </a>
                     </Grid>
-                    <Grid item xs={4} className = {classes.item }>
+                    <Grid item  xs={6} md={4} className = {classes.item }>
                         <a href="https://www.plataformadigitalnacional.org/blog/sistema-4-informacion-y-comunicacion-del-sistema-nacional-anticorrupcion-y-el-sistema-nacional-de-fiscalizacion/" className={classes.links}>
                             <img className={classes.icons} src={s4} alt="Sistema 4"/>
                             <Typography variant="subheading" className={classes.links}>
@@ -86,7 +86,7 @@ class Sectores extends React.Component {
                             </Typography>
                         </a>
                     </Grid>
-                    <Grid item xs={4} className={classes.item}>
+                    <Grid item xs={6} md={4} className={classes.item}>
                         <a href="https://www.plataformadigitalnacional.org/blog/sistema-5-denuncias-publicas-de-faltas-administrativas-y-hechos-de-corrupcion/" className={classes.links}>
                             <img className={classes.icons} src={s5} alt="Sistema 5"/>
                             <Typography variant="subheading" className={classes.links}>
@@ -94,7 +94,7 @@ class Sectores extends React.Component {
                             </Typography>
                         </a>
                     </Grid>
-                    <Grid item xs={4} className={classes.item }>
+                    <Grid item  xs={6} md={4} className={classes.item }>
                         <a href="https://www.plataformadigitalnacional.org/blog/sistema-6-informacion-publica-de-contrataciones/" className={classes.links}>
                             <img className={classes.icons} src={s6} alt="Sistema 6"/>
                             <Typography variant="subheading" className={classes.links}>
