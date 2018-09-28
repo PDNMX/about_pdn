@@ -53,7 +53,7 @@ class Objetivos extends React.Component{
                         <Typography variant="subheading"><span className={classes.bullet}/> <b>Automatizar procesos, evitar discrecionalidad, colusión y conflicto de interés</b></Typography>
                     </li>
                     <li className={classes.li}>
-                        <Typography variant="subheading"><span className={classes.bullet}/> <b>Promover el uso de los datos</b> para respaldar procesos de sanción y como evidencia combatir la impunidad</Typography>
+                        <Typography variant="subheading"><span className={classes.bullet}/> <b>Promover el uso de los datos</b> para respaldar sanciones y como evidencia para combatir la impunidad</Typography>
                     </li>
                     <li className={classes.li}>
                         <Typography variant="subheading"><span className={classes.bullet}/> <b>Dar seguimiento, en tiempo real</b>, a los procesos y proyectos de contratación pública, asegurar el cumplimiento de sus objetivos

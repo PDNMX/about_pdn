@@ -5,7 +5,9 @@ import Paper from '@material-ui/core/Paper';
 
 
 const styles = theme => ({
-    root: {},
+    root: {
+        paddingBottom: theme.spacing.unit * 2
+    },
     box : {
         padding: theme.spacing.unit * 2,
         marginTop: '20px',
@@ -42,7 +44,7 @@ class Uso extends React.Component{
         const {classes} = this.props;
 
         return(
-            <div>
+            <div className={classes.root}>
                 <Typography variant="display2" className={classes.links}>Impacto de los datos para combatir la corrupción</Typography>
                 <br/>
                 <br/>
@@ -50,7 +52,7 @@ class Uso extends React.Component{
                 <div className={classes.box}>
                     <ul className={classes.ul}>
                         <li className={classes.li}>
-                            <Typography variant="subheading"><span className={classes.bullet}/> <a href="https://aristeguinoticias.com/1007/mexico/pgr-cisen-y-sedena-gastaron-casi-500-millones-en-actualizar-pegasus-documentos/" className={classes.links}>Aristegui Noticias</a> utilizó datos abiertos para investigas posibles casos de espionaje.</Typography>
+                            <Typography variant="subheading"><span className={classes.bullet}/> <a href="https://aristeguinoticias.com/1007/mexico/pgr-cisen-y-sedena-gastaron-casi-500-millones-en-actualizar-pegasus-documentos/" className={classes.links}>Aristegui Noticias</a> utilizó datos abiertos para investigar posibles casos de espionaje.</Typography>
                         </li>
                         <li className={classes.li}>
                             <Typography variant="subheading"><span className={classes.bullet}/> <a href="https://imco.org.mx/articulo_es/indice-riesgos-corrupcion-sistema-mexicano-contrataciones-publicas/" className={classes.links}>Imco y OPI</a> utilizaron datos de contrataciones para identificar riesgos e impulsar una cultura de prevención en contrataciones.</Typography>

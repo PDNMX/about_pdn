@@ -13,6 +13,10 @@ import s5 from '../assets/icono5.svg';
 import s6 from '../assets/icono6.svg';
 
 const styles = theme => ({
+    root: {
+        paddingBottom: theme.spacing.unit * 2
+
+    },
 
     icons: {
         width: '80px'
@@ -40,7 +44,7 @@ class Sectores extends React.Component {
         const {classes } = this.props;
 
         return (
-            <div>
+            <div className={classes.root}>
                 <Grid container spacing={24}>
                     <Grid item xs={12}>
                         <Typography variant='display2' style={{color: '#96cb99'}}>
