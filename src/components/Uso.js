@@ -59,8 +59,7 @@ class Uso extends React.Component{
                             <Typography variant="subheading"><span className={classes.bullet}/> <a href="https://1560000.org/explora" className={classes.links}>Data Cívica</a> utilizó datos abiertos para reconstruir las declaraciones patrimoniales de servidores públicos del gobierno.</Typography>
                         </li>
                         <li className={classes.li}>
-                            <Typography variant="subheading"><span className={classes.bullet}/> <a href="https://www.animalpolitico.com/estafa-maestra/#datos" className={classes.links}>Animal Político</a> utilizó datos de auditorías y licitaciones para detectar desvíos de recursos, algo que ha sido utilizado como insumo
-                                en el proceso para sancionar a posibles involucrados.</Typography>
+                            <Typography variant="subheading"><span className={classes.bullet}/> <a href="https://www.animalpolitico.com/estafa-maestra/#datos" className={classes.links}>Animal Político</a> utilizó datos de auditorías y licitaciones para detectar desvíos de recursos, algo que ha sido utilizado como insumo en el proceso para sancionar a posibles involucrados.</Typography>
                         </li>
                     </ul>
                 </div>
