@@ -28,7 +28,7 @@ class Interoperabilidad extends React.Component{
         return (
             <div className={classes.root}>
                 <Typography variant='display2' className={classes.links}>
-                    PDN como Plataforma de Interoperabilidad
+                    Plataforma de Interoperabilidad
                 </Typography>
 
                 <br/>
@@ -47,7 +47,7 @@ class Interoperabilidad extends React.Component{
 
                     <Grid item xs={6}>
                         <Typography className={classes.whiteText} variant="subheading">
-                            La <b className={classes.links}>PDN</b> será el lugar que provocará la <b className={classes.links}>interoperabilidad,
+                            La <b className={classes.links}>PDN</b> permitirá la <b className={classes.links}>interoperabilidad,
                             consulta y uso</b> de estos datos para toda la ciudadanía.
                         </Typography>
 

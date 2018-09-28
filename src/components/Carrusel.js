@@ -6,8 +6,9 @@ import GridListTile from '@material-ui/core/GridListTile';
 import GridListTileBar from '@material-ui/core/GridListTileBar';
 import IconButton from '@material-ui/core/IconButton';
 import StarBorderIcon from '@material-ui/icons/StarBorder';
-import Logo from '../assets/logo-PDN.svg';
 import C1 from '../assets/banner1.png';
+import C2 from '../assets/banner2.png';
+import C3 from '../assets/banner3.png';
 const tileData = [
     {
         img: C1,
@@ -16,12 +17,12 @@ const tileData = [
         featured: true,
     },
     {
-        img: Logo,
+        img: C2,
         title: 'Infografía 2',
         author: 'director90',
     },
     {
-        img: Logo,
+        img: C3,
         title: 'Infografía 3',
         author: 'Danson67',
     },
@@ -71,6 +72,7 @@ function SingleLineGridList(props) {
 
     return (
         <div className={classes.root}>
+            Conoce más
             <GridList className={classes.gridList} cols={1}>
                 {tileData.map((tile, i) => (
                     <GridListTile key={i}>

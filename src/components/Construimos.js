@@ -21,12 +21,12 @@ const styles = theme => ({
         background: '#96cb99',
         color: '#ffffff',
         textAlign: 'center',
-        padding: theme.spacing.unit* .5
+        padding: theme.spacing.unit
     },
     bullet: {
         backgroundColor: '#96cb99',
-        height: '15px',
-        width: '15px',
+        height: '10px',
+        width: '10px',
         borderRadius: '50%',
         display: 'inline-block',
         marginLeft: '-20px',
@@ -35,13 +35,13 @@ const styles = theme => ({
     ul: {
         listStyle: 'none',
         //marginLeft: 0,
-        paddingLeft: '15px'
+        paddingLeft: '20px'
     },
     li: {
         paddingBottom: theme.spacing.unit *2
     },
     ejes: {
-        padding: theme.spacing.unit,
+        paddingTop: '20px',
         maxWidth: '350px'
     }
 });
@@ -55,7 +55,7 @@ class Construimos extends React.Component{
             <div className={classes.root}>
 
                 <Typography variant="display2" className={classes.links}>
-                    Conoce cómo construimos la PDN
+                    ¿Cómo se construye la PDN?
                 </Typography>
 
                 <br/>

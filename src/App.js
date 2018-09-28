@@ -156,8 +156,11 @@ class App extends Component {
                         </Grid>
                     </Grid>
 
-
-                    <Footer/>
+                    <Grid container justify="center" spacing={24} style={{background:  "#fff"}}>
+                        <Grid item xs={12} className={classes.gridItem}>
+                            <Footer/>
+                        </Grid>
+                    </Grid>
                 </div>
             </MuiThemeProvider>
         );

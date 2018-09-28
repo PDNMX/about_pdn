@@ -8,8 +8,8 @@ const styles = theme => ({
     },
     bullet: {
         backgroundColor: '#96cb99',
-        height: '15px',
-        width: '15px',
+        height: '10px',
+        width: '10px',
         borderRadius: '50%',
         display: 'inline-block',
         marginLeft: '-20px',
@@ -18,7 +18,7 @@ const styles = theme => ({
     ul: {
         listStyle: 'none',
         //marginLeft: 0,
-        paddingLeft: '15px'
+        paddingLeft: '20px'
     },
     li: {
       paddingBottom: theme.spacing.unit *2
@@ -36,7 +36,7 @@ class Objetivos extends React.Component{
         return (
             <div>
                 <Typography variant="display2" className={classes.links}>
-                    ¿Cuáles son sus objetivos?
+                    Objetivos
                 </Typography>
                 <br/>
                 <br/>

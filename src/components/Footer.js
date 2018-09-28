@@ -2,18 +2,23 @@ import React from 'react';
 //import Typography from '@material-ui/core/Typography';
 import {withStyles} from '@material-ui/core/styles';
 import PropTypes from 'prop-types';
+import Grid from '@material-ui/core/Grid';
+import Typography from '@material-ui/core/Typography';
 
-import SESNA from '../assets/LogotipoSESNA.svg';
+import SESNA from '../assets/LogotipoSESNA-01.png';
 
 const styles  = theme => ({
     root: {
-        textAlign: 'center',
-        //paddingTop: theme.spacing.unit,
+        //textAlign: 'center',
         //paddingBottom: theme.spacing.unit,
-        background: "#fff"
+        flexGrow:1
     },
     logo:{
-      maxWidth: '300px'
+        marginTop: 0,
+        maxWidth: '150px'
+    },
+    links: {
+        color: '#96cb99'
     }
 });
 
@@ -23,7 +28,18 @@ class Footer extends React.Component{
         const { classes } = this.props;
         return (
             <div className={classes.root}>
-                <img src={SESNA} alt='SESNA' className={classes.logo}/>
+                <Grid container justify='center'>
+                    <Grid item md={8} xs={12}>
+                        <img src={SESNA} alt='SESNA' className={classes.logo}/>
+                    </Grid>
+                    <Grid item md={4} xs={12} align="right">
+                        <Typography variant="subheading">
+                            <a href="" className={classes.links}>
+                            Términos de referencia
+                            </a>
+                        </Typography>
+                    </Grid>
+                </Grid>
             </div>
         )
     }

@@ -16,8 +16,8 @@ const styles = theme => ({
     },
     bullet: {
         backgroundColor: '#96cb99',
-        height: '15px',
-        width: '15px',
+        height: '10px',
+        width: '10px',
         borderRadius: '50%',
         display: 'inline-block',
         marginLeft: '-20px',
