@@ -51,9 +51,9 @@ class Uso extends React.Component{
 
                 <div className={classes.box}>
                     <ul className={classes.ul}>
-                        <li className={classes.li}>
+                        {/* <li className={classes.li}>
                             <Typography variant="subheading"><span className={classes.bullet}/> <a href="https://aristeguinoticias.com/1007/mexico/pgr-cisen-y-sedena-gastaron-casi-500-millones-en-actualizar-pegasus-documentos/" className={classes.links}>Aristegui Noticias</a> utilizó datos abiertos para investigar posibles casos de espionaje.</Typography>
-                        </li>
+                        </li>*/}
                         <li className={classes.li}>
                             <Typography variant="subheading"><span className={classes.bullet}/> <a href="https://imco.org.mx/articulo_es/indice-riesgos-corrupcion-sistema-mexicano-contrataciones-publicas/" className={classes.links}>Imco y OPI</a> utilizaron datos de contrataciones para identificar riesgos e impulsar una cultura de prevención en contrataciones.</Typography>
                         </li>
