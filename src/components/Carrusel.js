@@ -41,13 +41,13 @@ class Carrusel extends React.Component{
 
                 <Grid container spacing={24}>
                     <Grid item xs={12} md={4}>
-                        <Tarjeta img={C1} title="Proximamente" text="Talleres para identificar usos de la PDN" url='#'/>
+                        <Tarjeta img={C1} title="Proximamente" text="Talleres para identificar usos de la PDN" url='https://www.plataformadigitalnacional.org/blog/por-una-plataforma-digital-nacional-incluyente/'/>
                     </Grid>
                     <Grid item xs={12} md={4}>
-                        <Tarjeta img={C2} title="Conoce" text="Guía de Apertura de Datos Anticorrupción" url="https://plataformadigitalnacional.org/blog/que-es-la-guia-de-apertura-anticorrupcion/"/>
+                        <Tarjeta img={C2} title="Conoce" text="Guía de Apertura de Datos Anticorrupción" url="https://www.plataformadigitalnacional.org/blog/que-es-la-guia-de-apertura-anticorrupcion/"/>
                     </Grid>
                     <Grid item xs={12} md={4}>
-                        <Tarjeta img={C3} title="Conoce" text="Trabajo del Grupo Asesor de la PDN" url="https://plataformadigitalnacional.org/blog/primera-sesion-del-grupo-asesor-de-la-plataforma-digital-nacional/"/>
+                        <Tarjeta img={C3} title="Conoce" text="Trabajo del Grupo Asesor de la PDN" url="https://www.plataformadigitalnacional.org/blog/primera-sesion-del-grupo-asesor-de-la-plataforma-digital-nacional/"/>
                     </Grid>
                 </Grid>
                 {/*<SingleLineGridList/>*/}
