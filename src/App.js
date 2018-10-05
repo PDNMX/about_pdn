@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 //import Typography from "@material-ui/core/Typography";
 import {withStyles} from '@material-ui/core/styles';
 import PropTypes from 'prop-types';
@@ -87,35 +88,33 @@ const styles = theme => ({
     }
 });
 
-class App extends Component {
-    render() {
 
-        const {classes} = this.props;
 
-        return (
-            <MuiThemeProvider theme ={theme}>
-                <div className={classes.root}>
-                    <Header/>
+function Home(props) {
+    const {classes} = props;
+    return (
+        <div className={classes.root}>
+            <Header/>
 
-                    <Grid container spacing={24} justify="center">
-                        <Grid item xs={12} className={classes.gridItem}>
-                            <QueEs/>
-                        </Grid>
-                    </Grid>
+            <Grid container spacing={24} justify="center">
+                <Grid item xs={12} className={classes.gridItem}>
+                    <QueEs/>
+                </Grid>
+            </Grid>
 
-                    <Grid container spacing={24} justify="center" style={{background: "#f9f9f9"}}>
-                        <Grid item xs={12} className={classes.gridItem}>
-                            <Sectores/>
-                        </Grid>
-                    </Grid>
+            <Grid container spacing={24} justify="center" style={{background: "#f9f9f9"}}>
+                <Grid item xs={12} className={classes.gridItem}>
+                    <Sectores/>
+                </Grid>
+            </Grid>
 
-                    <Grid container spacing={24} justify="center" style={{background: '#e6e6e6'}}>
-                        <Grid item xs={12} className={classes.gridItem}>
-                            <Objetivos/>
-                        </Grid>
-                    </Grid>
+            <Grid container spacing={24} justify="center" style={{background: '#e6e6e6'}}>
+                <Grid item xs={12} className={classes.gridItem}>
+                    <Objetivos/>
+                </Grid>
+            </Grid>
 
-                    {/*
+            {/*
                     <Grid container spacing={24} justify="center" style={{background: '#37464f'}}>
                         <Grid item xs={12} className={classes.gridItem}>
                             <QueHacemos/>
@@ -123,45 +122,70 @@ class App extends Component {
                     </Grid>
                     */}
 
-                    <Grid container spacing={24} justify='center' style={{background: '#37464f'}}>
-                        <Grid item xs={12} className ={classes.gridItem}>
-                            <Interoperabilidad/>
-                        </Grid>
-                    </Grid>
+            <Grid container spacing={24} justify='center' style={{background: '#37464f'}}>
+                <Grid item xs={12} className ={classes.gridItem}>
+                    <Interoperabilidad/>
+                </Grid>
+            </Grid>
 
 
-                    <Grid container spacing={24} justify='center'>
-                        <Grid item xs={12} className={classes.gridItem}>
-                            <Construimos/>
-                        </Grid>
-                    </Grid>
+            <Grid container spacing={24} justify='center'>
+                <Grid item xs={12} className={classes.gridItem}>
+                    <Construimos/>
+                </Grid>
+            </Grid>
 
-                    {/*<div style={{background: "#e6e6e6"}}>
+            {/*<div style={{background: "#e6e6e6"}}>
                         <div className={classes.contents}>
                             <QueSigue/>
                         </div>
                     </div>*/}
 
 
-                    <Grid container justify="center" spacing={24}>
-                        <Grid item xs={12} className={classes.gridItem}>
-                            <Carrusel/>
-                        </Grid>
-                    </Grid>
+            <Grid container justify="center" spacing={24}>
+                <Grid item xs={12} className={classes.gridItem}>
+                    <Carrusel/>
+                </Grid>
+            </Grid>
 
 
-                    <Grid container justify="center" spacing={24} style={{background: '#f9f9f9'}}>
-                        <Grid item xs={12} className={classes.gridItem}>
-                            <Uso/>
-                        </Grid>
-                    </Grid>
+            <Grid container justify="center" spacing={24} style={{background: '#f9f9f9'}}>
+                <Grid item xs={12} className={classes.gridItem}>
+                    <Uso/>
+                </Grid>
+            </Grid>
 
-                    <Grid container justify="center" spacing={24} style={{background:  "#fff"}}>
-                        <Grid item xs={12} className={classes.gridItem}>
-                            <Footer/>
-                        </Grid>
-                    </Grid>
-                </div>
+            <Grid container justify="center" spacing={24} style={{background:  "#fff"}}>
+                <Grid item xs={12} className={classes.gridItem}>
+                    <Footer/>
+                </Grid>
+            </Grid>
+        </div>);
+
+}
+
+Home = withStyles(styles)(Home);
+
+
+function Terminos (props){
+    return(
+        <div>Términos </div>
+    );
+}
+
+class App extends Component {
+    render() {
+
+        //const {classes} = this.props;
+
+        return (
+            <MuiThemeProvider theme ={theme}>
+                <Router>
+                    <Switch>
+                        <Route exact path="/" component={Home}/>
+                        <Route path="/terminos" component={Terminos}/>
+                    </Switch>
+                </Router>
             </MuiThemeProvider>
         );
     }
