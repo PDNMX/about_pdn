@@ -7,6 +7,7 @@ import {withStyles} from '@material-ui/core/styles';
 import PropTypes from 'prop-types';
 import QueEs from './components/QueEs';
 import Sectores from './components/Sectores';
+import Terminos from './components/Terminos';
 //import QueHacemos from './components/QueHacemos';
 //import QueSigue from './components/QueSigue';
 import Objetivos from './components/Objetivos';
@@ -165,13 +166,6 @@ function Home(props) {
 }
 
 Home = withStyles(styles)(Home);
-
-
-function Terminos (props){
-    return(
-        <div>Términos </div>
-    );
-}
 
 class App extends Component {
     render() {
