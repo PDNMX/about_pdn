@@ -18,7 +18,22 @@ const styles  = theme => ({
         maxWidth: '150px'
     },
     links: {
-        color: '#96cb99'
+        color: '#96cb99',
+        //marginTop: '10px'
+    },
+    itemLogo:{
+        [theme.breakpoints.down('md')]:{
+            paddingBottom: theme.spacing.unit*2,
+            textAlign: 'center'
+        }
+    },
+    terminos:{
+        [theme.breakpoints.up('md')]:{
+            textAlign: 'right'
+        },
+        [theme.breakpoints.down('md')]:{
+            textAlign: 'center'
+        }
     }
 });
 
@@ -29,14 +44,14 @@ class Footer extends React.Component{
         return (
             <div className={classes.root}>
                 <Grid container justify='center'>
-                    <Grid item md={8} xs={12}>
+                    <Grid item md={6} xs={12} className={classes.itemLogo}>
                         <img src={SESNA} alt='SESNA' className={classes.logo}/>
                     </Grid>
-                    <Grid item md={4} xs={12} align="right">
+                    <Grid item md={6} xs={12} className={classes.terminos}>
                         <Typography variant="subheading">
-                            {/*<a href="" className={classes.links}>
+                            <a href="/terminos" className={classes.links}>
                             Términos de uso
-                            </a>*/}
+                            </a>
                         </Typography>
                     </Grid>
                 </Grid>
