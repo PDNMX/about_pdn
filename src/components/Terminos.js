@@ -39,7 +39,7 @@ class Terminos extends React.Component{
                         </Typography>
 
                         <Typography>
-                            Som obligaciones del usuario:
+                            Son obligaciones del usuario:
                         </Typography>
 
                         <ul>
