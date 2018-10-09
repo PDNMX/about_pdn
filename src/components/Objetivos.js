@@ -4,7 +4,8 @@ import Typography from '@material-ui/core/Typography';
 
 const styles = theme => ({
     root: {
-
+        paddingTop: theme.spacing.unit*4,
+        paddingBottom: theme.spacing.unit*4,
     },
     bullet: {
         backgroundColor: '#96cb99',
@@ -34,7 +35,7 @@ class Objetivos extends React.Component{
         const {classes} = this.props;
 
         return (
-            <div>
+            <div className={classes.root}>
                 <Typography variant="display2" className={classes.links}>
                     Objetivos
                 </Typography>

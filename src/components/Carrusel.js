@@ -16,7 +16,8 @@ import C3 from '../assets/banner3.png';
 const styles = theme => ({
     root: {
         flexGrow:1,
-        paddingBottom: theme.spacing.unit * 2
+        paddingTop: theme.spacing.unit*4,
+        paddingBottom: theme.spacing.unit*4,
     },
     title: {
         color: '#96cb99'

@@ -9,7 +9,9 @@ import Ejes from '../assets/grafico-ejes.svg';
 
 const styles = theme => ({
     root: {
-        flexGrow: 1
+        flexGrow: 1,
+        paddingTop: theme.spacing.unit*4,
+        paddingBottom: theme.spacing.unit*4,
     },
     links: {
         color: '#96cb99'
