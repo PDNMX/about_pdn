@@ -97,19 +97,19 @@ function Home(props) {
         <div className={classes.root}>
             <Header/>
 
-            <Grid container spacing={24} justify="center">
+            <Grid container spacing={0} justify="center">
                 <Grid item xs={12} className={classes.gridItem}>
                     <QueEs/>
                 </Grid>
             </Grid>
 
-            <Grid container spacing={24} justify="center" style={{background: "#f9f9f9"}}>
+            <Grid container spacing={0} justify="center" style={{background: "#f9f9f9"}}>
                 <Grid item xs={12} className={classes.gridItem}>
                     <Sectores/>
                 </Grid>
             </Grid>
 
-            <Grid container spacing={24} justify="center" style={{background: '#e6e6e6'}}>
+            <Grid container spacing={0} justify="center" style={{background: '#e6e6e6'}}>
                 <Grid item xs={12} className={classes.gridItem}>
                     <Objetivos/>
                 </Grid>
@@ -123,14 +123,14 @@ function Home(props) {
                     </Grid>
                     */}
 
-            <Grid container spacing={24} justify='center' style={{background: '#37464f'}}>
+            <Grid container spacing={0} justify='center' style={{background: '#37464f'}}>
                 <Grid item xs={12} className ={classes.gridItem}>
                     <Interoperabilidad/>
                 </Grid>
             </Grid>
 
 
-            <Grid container spacing={24} justify='center'>
+            <Grid container spacing={0} justify='center'>
                 <Grid item xs={12} className={classes.gridItem}>
                     <Construimos/>
                 </Grid>
@@ -143,20 +143,20 @@ function Home(props) {
                     </div>*/}
 
 
-            <Grid container justify="center" spacing={24}>
+            <Grid container justify="center" spacing={0}>
                 <Grid item xs={12} className={classes.gridItem}>
                     <Carrusel/>
                 </Grid>
             </Grid>
 
 
-            <Grid container justify="center" spacing={24} style={{background: '#f9f9f9'}}>
+            <Grid container justify="center" spacing={0} style={{background: '#f9f9f9'}}>
                 <Grid item xs={12} className={classes.gridItem}>
                     <Uso/>
                 </Grid>
             </Grid>
 
-            <Grid container justify="center" spacing={24} style={{background:  "#fff"}}>
+            <Grid container justify="center" spacing={0} style={{background:  "#fff"}}>
                 <Grid item xs={12} className={classes.gridItem}>
                     <Footer/>
                 </Grid>

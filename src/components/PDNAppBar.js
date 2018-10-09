@@ -43,7 +43,7 @@ class PDNAppBar extends React.Component {
         return (
             <div className={classes.root}>
                 <AppBar color="default"  position="static" >
-                    <Grid container justify="center">
+                    <Grid container justify="center" spacing={0}>
                         <Grid item xs={12} style ={{maxWidth: '1024px'}}>
                             <Toolbar>
                                 <IconButton className={classes.menuButton} color="inherit" aria-label="Menu" href='/'>

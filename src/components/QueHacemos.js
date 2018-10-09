@@ -54,7 +54,7 @@ class QueHacemos extends React.Component{
 
                 <br/>
 
-                <Grid container spacing={24}>
+                <Grid container spacing={0}>
                     <Grid item xs={6} className={classes.itemCentered}>
                         <img src={Bd} alt="PDN" className={classes.bd}/>
                     </Grid>

@@ -36,16 +36,16 @@ class Interoperabilidad extends React.Component{
                 <br/>
                 <br/>
 
-                <Grid container spacing={24}>
+                <Grid container spacing={0}>
 
-                    <Grid item xs={6}>
+                    <Grid item xs={12} md={6}>
                         <Typography className={classes.whiteText} variant="subheading">
                             Con la <b className={classes.links}>PDN</b>, las instituciones del Gobierno continuarán generando sus propios datos,
                             que ahora deberán ser <b className={classes.links}> estandarizados y distribuidos para ser consultados desde la Plataforma</b>.
                         </Typography>
                     </Grid>
 
-                    <Grid item xs={6}>
+                    <Grid item xs={12} md={6}>
                         <Typography className={classes.whiteText} variant="subheading">
                             Con esto, la <b className={classes.links}>PDN permitirá el intercambio y consulta de datos eficiente </b>
                             con autoridades y ciudadanía, cuidando en todo momento la seguridad e integridad de la información.
@@ -57,9 +57,9 @@ class Interoperabilidad extends React.Component{
                 <br/>
                 <br/>
 
-                <Grid container spacing={24} justify='center'>
+                <Grid container spacing={0} justify='center'>
                     <Grid item xs={12}>
-                        <img src={Gi} alt="Interoperabilidad" className={classes.interopera}/>
+                        <img src={Gi} alt="Interoperabilidad" className={classes.interopera} style={{maxWidth: '95%'}}/>
                     </Grid>
                 </Grid>
             </div>
