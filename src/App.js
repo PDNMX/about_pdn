@@ -188,7 +188,7 @@ class App extends Component {
                     <Switch>
                         <Route exact path="/" component={Home}/>
                         <Route path="/terminos" component={Terminos}/>
-                        {/*<Route path="*" component={NotFound}/>*/}
+                        <Route path="*" component={NotFound}/>
                     </Switch>
                 </Router>
             </MuiThemeProvider>
