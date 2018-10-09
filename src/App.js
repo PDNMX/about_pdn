@@ -167,26 +167,33 @@ function Home(props) {
 
 Home = withStyles(styles)(Home);
 
+
+function NotFound(props){
+    return (
+        <div>
+            Not Found
+        </div>
+    );
+}
+
+
 class App extends Component {
     render() {
 
         //const {classes} = this.props;
 
         return (
-            <MuiThemeProvider theme ={theme}>
+            <MuiThemeProvider theme={theme}>
                 <Router>
                     <Switch>
                         <Route exact path="/" component={Home}/>
                         <Route path="/terminos" component={Terminos}/>
+                        {/*<Route path="*" component={NotFound}/>*/}
                     </Switch>
                 </Router>
             </MuiThemeProvider>
         );
     }
 }
-
-App.propTypes = {
-    classes: PropTypes.object.isRequired
-};
 
 export default withStyles(styles)(App);

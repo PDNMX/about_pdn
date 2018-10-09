@@ -35,14 +35,15 @@ class QueEs extends React.Component{
                     <Grid item xs={12} md={6}>
 
                         <Typography variant="subheading">
-                            Es una fuente de
-                            <b className={classes.links}> inteligencia anticorrupción</b> que creará impacto y generará valor para el gobierno y
-                            la sociedad, a partir de los datos.
+                            La Plataforma Digital Nacional es una fuente de
+                            <b className={classes.links}> inteligencia para construir integridad y combatir la corrupción,</b> que creará
+                            valor para el gobierno y la sociedad, a partir de grandes cantidades de datos.
                         </Typography>
                         <br/>
                         <Typography variant="subheading">
-                            La Plataforma hará que los datos anticorrupción del Gobierno Federal, Estados,
-                            Poderes y Órganos Autónomos sean comparables y utilizables, empezando con <b className={classes.links}>seis sistemas de datos prioritarios</b>.
+                            La Plataforma es un <b className={classes.links}>medio para el intercambio de datos anticorrupción</b> del Gobierno,
+                            que busca quitar barreras y romper silos de información para que los datos sean comparables, accesibles y utilizables,
+                            empezando con <b className={classes.links}>seis sistemas de datos prioritarios</b>.
                         </Typography>
                     </Grid>
                 </Grid>
