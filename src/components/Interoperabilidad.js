@@ -45,7 +45,7 @@ class Interoperabilidad extends React.Component{
 
                     <Grid item xs={6}>
                         <Typography className={classes.whiteText} variant="subheading">
-                            Con esto, la <b className={classes.links}>PDN permitirá el intercambio y consulta de datos eficiente</b>
+                            Con esto, la <b className={classes.links}>PDN permitirá el intercambio y consulta de datos eficiente </b>
                             con autoridades y ciudadanía, cuidando en todo momento la seguridad e integridad de la información.
                         </Typography>
 
