@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
-//import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 //import Typography from "@material-ui/core/Typography";
 import {withStyles} from '@material-ui/core/styles';
 import PropTypes from 'prop-types';
@@ -184,14 +184,13 @@ class App extends Component {
 
         return (
             <MuiThemeProvider theme={theme}>
-                {/*<Router>
+                <Router>
                     <Switch>
                         <Route exact path="/" component={Home}/>
                         <Route path="/terminos" component={Terminos}/>
                         <Route path="*" component={NotFound}/>
                     </Switch>
-                </Router>*/}
-                <Home/>
+                </Router>
             </MuiThemeProvider>
         );
     }
