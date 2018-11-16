@@ -9,7 +9,7 @@ import PropTypes from 'prop-types';
 import Tarjeta from './Tarjeta';
 import Grid from '@material-ui/core/Grid';
 
-import C1 from '../assets/banner1.png';
+import C1 from '../assets/banner4.png';//'../assets/banner1.png';
 import C2 from '../assets/banner2.png';
 import C3 from '../assets/banner3.png';
 
@@ -42,7 +42,7 @@ class Carrusel extends React.Component{
 
                 <Grid container spacing={24}>
                     <Grid item xs={12} md={4}>
-                        <Tarjeta img={C1} title="Proximamente" text="Talleres para identificar usos de la PDN" url='https://www.plataformadigitalnacional.org/blog/por-una-plataforma-digital-nacional-incluyente/'/>
+                        <Tarjeta img={C1} title="Proximamente" text="Datatón Anticorrupción" url='https://www.plataformadigitalnacional.org/blog/por-una-plataforma-digital-nacional-incluyente/'/>
                     </Grid>
                     <Grid item xs={12} md={4}>
                         <Tarjeta img={C2} title="Conoce" text="Guía de Apertura de Datos Anticorrupción" url="https://www.plataformadigitalnacional.org/blog/que-es-la-guia-de-apertura-anticorrupcion/"/>
