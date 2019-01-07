@@ -1,21 +1,8 @@
 import React, { Component } from 'react';
-import Header from './components/Header';
-import Footer from './components/Footer';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-//import Typography from "@material-ui/core/Typography";
 import {withStyles} from '@material-ui/core/styles';
-import PropTypes from 'prop-types';
-import QueEs from './components/QueEs';
-import Sectores from './components/Sectores';
 import Terminos from './components/Terminos';
-//import QueHacemos from './components/QueHacemos';
-//import QueSigue from './components/QueSigue';
-import Objetivos from './components/Objetivos';
-import Carrusel from './components/Carrusel';
-import Uso from './components/Uso';
-import Interoperabilidad from './components/Interoperabilidad';
-import Construimos from './components/Construimos';
-import Grid from '@material-ui/core/Grid';
+import About from './components/About';
 
 import {createMuiTheme, MuiThemeProvider } from '@material-ui/core/styles';
 
@@ -89,85 +76,6 @@ const styles = theme => ({
     }
 });
 
-
-
-function Home(props) {
-    const {classes} = props;
-    return (
-        <div className={classes.root}>
-            <Header/>
-
-            <Grid container spacing={0} justify="center">
-                <Grid item xs={12} className={classes.gridItem}>
-                    <QueEs/>
-                </Grid>
-            </Grid>
-
-            <Grid container spacing={0} justify="center" style={{background: "#f9f9f9"}}>
-                <Grid item xs={12} className={classes.gridItem}>
-                    <Sectores/>
-                </Grid>
-            </Grid>
-
-            <Grid container spacing={0} justify="center" style={{background: '#e6e6e6'}}>
-                <Grid item xs={12} className={classes.gridItem}>
-                    <Objetivos/>
-                </Grid>
-            </Grid>
-
-            {/*
-                    <Grid container spacing={24} justify="center" style={{background: '#37464f'}}>
-                        <Grid item xs={12} className={classes.gridItem}>
-                            <QueHacemos/>
-                        </Grid>
-                    </Grid>
-                    */}
-
-            <Grid container spacing={0} justify='center' style={{background: '#37464f'}}>
-                <Grid item xs={12} className ={classes.gridItem}>
-                    <Interoperabilidad/>
-                </Grid>
-            </Grid>
-
-
-            <Grid container spacing={0} justify='center'>
-                <Grid item xs={12} className={classes.gridItem}>
-                    <Construimos/>
-                </Grid>
-            </Grid>
-
-            {/*<div style={{background: "#e6e6e6"}}>
-                        <div className={classes.contents}>
-                            <QueSigue/>
-                        </div>
-                    </div>*/}
-
-
-            <Grid container justify="center" spacing={0}>
-                <Grid item xs={12} className={classes.gridItem}>
-                    <Carrusel/>
-                </Grid>
-            </Grid>
-
-
-            <Grid container justify="center" spacing={0} style={{background: '#f9f9f9'}}>
-                <Grid item xs={12} className={classes.gridItem}>
-                    <Uso/>
-                </Grid>
-            </Grid>
-
-            <Grid container justify="center" spacing={0} style={{background:  "#fff"}}>
-                <Grid item xs={12} className={classes.gridItem}>
-                    <Footer/>
-                </Grid>
-            </Grid>
-        </div>);
-
-}
-
-Home = withStyles(styles)(Home);
-
-
 function NotFound(props){
     return (
         <div>
@@ -175,7 +83,6 @@ function NotFound(props){
         </div>
     );
 }
-
 
 class App extends Component {
     render() {
@@ -186,7 +93,7 @@ class App extends Component {
             <MuiThemeProvider theme={theme}>
                 <Router>
                     <Switch>
-                        <Route exact path="/" component={Home}/>
+                        <Route exact path="/" component={About}/>
                         <Route path="/terminos" component={Terminos}/>
                         <Route path="*" component={NotFound}/>
                     </Switch>

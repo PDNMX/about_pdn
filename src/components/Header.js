@@ -6,7 +6,7 @@ import PDNAppBar from './PDNAppBar';
 import bgi from '../assets/textura.jpg';
 import PDNLogo from '../assets/logo-PDN.svg';
 //import Grid from '@material-ui/core/Grid';
-import Chip from '@material-ui/core/Chip';
+//import Chip from '@material-ui/core/Chip';
 
 
 const styles = theme => ({

@@ -127,7 +127,7 @@ class Terminos extends React.Component{
                             <li><Typography>
                                 Estos términos de libre uso de datos no lo autorizan para utilizar el contenido de terceros como pueden ser obras en cualquier formato que se encuentren dentro de los conjuntos de datos. En caso de que requiera utilizar dicho contenido, deberá buscar la autorización directamente del titular de los derechos correspondientes de conformidad con la Ley Federal de Derechos de Autor.
                             </Typography></li>
-                            <li><Typography>Términos compatibles con <img src={by}/></Typography> </li>
+                            <li><Typography>Términos compatibles con <img src={by} alt="Creative Commons"/></Typography> </li>
                         </ul>
 
                         <br/>
